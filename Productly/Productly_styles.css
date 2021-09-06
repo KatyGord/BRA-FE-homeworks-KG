@@ -1,0 +1,73 @@
+
+header {
+  display: block;
+  width: 100%;
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+
+header .header-logo {
+  font-size: 40px;
+  text-decoration: none;
+  color: rgb(25, 59, 86);
+}
+
+header nav {
+  width: 600px;
+  display: inline-block;
+  float: right;
+}
+
+header nav a {
+  margin: 20px;
+  text-decoration: none;
+  color: rgb(47, 40, 29);
+  }
+
+header nav .header_sign_in {
+  display: inline-block;
+  margin: 0 0 0 20px;
+}
+
+.buttons {
+  border-color: gray;
+  padding: 5px 10px 5px 10px;
+  background-color: white;
+  border-radius: 5px;
+
+}
+
+.buttons:hover {
+  background-color: #FA9904;
+  color: white;
+  border-color: transparent;
+}
+
+.link_video {
+  color: #FA9904;
+}
+
+main section {
+  overflow: hidden;
+}
+
+main section div {
+  float: left;
+
+}
+
+main section div h1 {
+  font-size: 45px;
+}
+
+main section div p {
+  color: rgb(47, 40, 29);
+}
+
+main section svg {
+  float: right;
+}
+
+main section, footer {
+  padding: 100px;
+}

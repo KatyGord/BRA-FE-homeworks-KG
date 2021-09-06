@@ -1,0 +1,38 @@
+body {
+  max-width: 786px;
+}
+
+h1 {
+  background-color: rgb(165, 42, 42);
+  color: white;
+  text-align: center;
+}
+
+p {
+font-size: 18px;
+}
+
+.blue_words {
+  color: blue;
+}
+
+.sunset {
+  margin: 0px auto 0px;
+  display: block;
+}
+
+section {
+  text-align: center;
+
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.border {
+  border: dashed;
+}
