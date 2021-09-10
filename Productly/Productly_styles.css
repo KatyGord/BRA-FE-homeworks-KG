@@ -1,3 +1,6 @@
+body{
+  font-family: poppins;
+}
 
 header {
   display: block;
@@ -13,7 +16,7 @@ header .header-logo {
 }
 
 header nav {
-  width: 600px;
+  width: 670px;
   display: inline-block;
   float: right;
 }
@@ -29,15 +32,20 @@ header nav .header_sign_in {
   margin: 0 0 0 20px;
 }
 
-.buttons {
+button {
   border-color: gray;
-  padding: 5px 10px 5px 10px;
+  padding: 10px 15px 10px 15px;
   background-color: white;
   border-radius: 5px;
-
+  font-size: 16px;
 }
 
-.buttons:hover {
+.button_middle{
+  width: 100%;
+  text-align: center;
+}
+
+button:hover {
   background-color: #FA9904;
   color: white;
   border-color: transparent;
@@ -47,25 +55,50 @@ header nav .header_sign_in {
   color: #FA9904;
 }
 
-main section {
-  overflow: hidden;
-}
-
-main section div {
+main section .first_page {
   float: left;
+  display: block;
+  width: 49%;
 
 }
 
-main section div h1 {
-  font-size: 45px;
+main section div svg {
+  padding: 0 5px 0 20px;
+  
+}
+
+main section .big {
+ float: right;
+}
+
+main section div h1{
+  font-size: 44px;
+  margin: 80px 0 30px 0;
+}
+
+.first_section_break{
+  padding: 100px 100px 500px 100px;
+}
+
+.second_section_break{
+  padding: 100px 100px 50px 100px;
+}
+
+
+main section h2{
+  font-size: 36px;
+  text-align: center;
 }
 
 main section div p {
   color: rgb(47, 40, 29);
+  font-size: 18px;
+  width: 458px;
+  line-height: 28px;
 }
 
-main section svg {
-  float: right;
+.flex{
+  display: flex;
 }
 
 main section, footer {
