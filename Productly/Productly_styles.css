@@ -40,7 +40,7 @@ button {
   font-size: 16px;
 }
 
-.button_middle{
+main section .button_middle{
   width: 100%;
   text-align: center;
 }
@@ -51,20 +51,22 @@ button:hover {
   border-color: transparent;
 }
 
-.link_video {
+main section div .link_video {
   color: #FA9904;
+  padding: 0 5px 0 40px;
+  position: relative;
+}
+
+.to_name_after{
+  position: absolute;
+  top: 2px;
+  left: 18px;
 }
 
 main section .first_page {
   float: left;
   display: block;
   width: 49%;
-
-}
-
-main section div svg {
-  padding: 0 5px 0 20px;
-  
 }
 
 main section .big {
