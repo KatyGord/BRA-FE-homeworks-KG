@@ -80,6 +80,10 @@ main section div h1{
 
 .first_section_break{
   padding: 100px 100px 500px 100px;
+  /* я понимаю почему ты так сделала, но можно было и погуглить
+   https://qna.habr.com/q/109441
+   https://habr.com/ru/post/136588/
+   */
 }
 
 .second_section_break{
