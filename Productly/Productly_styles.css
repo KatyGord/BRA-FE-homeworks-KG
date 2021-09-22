@@ -1,5 +1,6 @@
 body{
   font-family: poppins;
+  font-size: 16px;
 }
 
 header {
@@ -9,7 +10,7 @@ header {
   box-sizing: border-box;
 }
 
-header .header-logo {
+.header-logo {
   font-size: 40px;
   text-decoration: none;
   color: rgb(25, 59, 86);
@@ -40,6 +41,15 @@ button {
   font-size: 16px;
 }
 
+.get_started_button {
+  border-color: gray;
+  padding: 10px 15px 10px 15px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 40px;
+}
+
 main section .button_middle{
   width: 100%;
   text-align: center;
@@ -53,37 +63,44 @@ button:hover {
 
 main section div .link_video {
   color: #FA9904;
-  padding: 0 5px 0 40px;
+  padding: 0 5px 0 5px;
   position: relative;
 }
 
-.to_name_after{
+main section div a .triangle{
   position: absolute;
   top: 2px;
   left: 18px;
+  margin-left: -35px;
 }
 
-main section .first_page {
+main section .main_text_left {
   float: left;
   display: block;
-  width: 49%;
+  width: 49%;  
 }
 
-main section .big {
+main section .main_text_right {
+  float: right;
+  display: block;
+  width: 49%;  
+}
+
+main section .big_pic_right {
  float: right;
 }
+
+main section .big_pic_left {
+  float: left;
+ }
 
 main section div h1{
   font-size: 44px;
   margin: 80px 0 30px 0;
 }
 
-.first_section_break{
-  padding: 100px 100px 500px 100px;
-  /* я понимаю почему ты так сделала, но можно было и погуглить
-   https://qna.habr.com/q/109441
-   https://habr.com/ru/post/136588/
-   */
+.section_break{
+  overflow: hidden
 }
 
 .second_section_break{
@@ -96,17 +113,61 @@ main section h2{
   text-align: center;
 }
 
-main section div p {
-  color: rgb(47, 40, 29);
+main section div .first_page_paragraph{
   font-size: 18px;
   width: 458px;
   line-height: 28px;
 }
 
-.flex{
-  display: flex;
+main section div p{
+  font-size: 18px;
 }
 
-main section, footer {
+
+  main section div article{
+    margin: 0 20px 30px 0;
+}
+
+.columns{
+  display: flex;
+  justify-content: space-between; /* to check later */
+}
+
+main section h3{
+  font-size: 36px;
+}
+
+main section h6{
+  font-size: 16px;
+  margin-bottom: unset;
+}
+
+p{
+  color: rgb(47, 40, 29);
+}
+
+
+
+main section, footer{
   padding: 100px;
+}
+
+footer nav a{
+  text-decoration: none;
+  color: rgb(25, 59, 86);
+}
+
+footer div:first-child {
+  margin-left: 35%;
+}
+
+footer div button{
+  margin-top: 10px;
+
+}
+
+#email{
+  border: 2px solid gray;
+  padding: 10px 60px 10px 15px;
+  border-radius: 10px;
 }

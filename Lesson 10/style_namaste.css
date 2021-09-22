@@ -1,0 +1,64 @@
+body{
+    background-color: white;
+    width: 940px;
+    margin: 0 auto;
+
+
+}
+
+header{
+text-align: center;
+margin-top: 50px;
+text-transform: uppercase;
+
+}
+
+header p{
+    font-size: 14px;
+    font-weight: normal;
+}
+header h1{
+font-size: 30px;
+font-weight: bold;
+color: #0ec8cb;
+width: 50%;
+margin: 0 auto;
+
+}
+
+header p:last-child {
+    font-size: 20px;
+    font-weight: normal;
+    color:#999;
+    padding: 2% 30%;
+}
+
+section div {
+    display: inline-block;
+    width: 24%;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 360px;
+    vertical-align: top;
+    background-color: #f7f7f7;
+    font-size: 16px;
+}
+
+section {
+    font-size: 0;
+}
+
+body section div h2 {
+    text-transform: uppercase;
+}
+
+section div svg{
+height: 64px;
+}
+
+section div:hover {
+    background-color: #0ec8cb7c;
+    color: white;
+}

@@ -1,0 +1,68 @@
+
+
+.first_background {
+background-image: url(./First_Background.svg);
+height: 1000px;
+}
+body div header{
+    padding: 20px 0 20px 120px;
+}
+
+body div section {
+    padding: 180px 0 20px 120px;
+}
+body div header h1 {
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Dancing Script;
+    font-size: 45px;
+}
+
+body div header nav {
+    float: right;
+    display: inline-block;
+    width: 550px;
+    margin-top: 10px;
+}
+
+body div header nav a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+body div header nav a:hover {
+    border-top: 3px solid orange;
+}
+
+body div section h1 {
+    font-size: 60px;
+}
+
+body div section button {
+    background-color: orange;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    font-size: 20px;
+    box-shadow: 5px 5px 10px darkgrey;
+
+}
+
+header {
+    display: block;
+    width: 100%;
+   
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  body div section p {
+      width: 370px;
+      padding-bottom: 30px;
+      font-size: 20px;
+  }
+
+.second_page {
+    background-color: #2CB0B0;
+}
