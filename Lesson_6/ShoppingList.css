@@ -1,0 +1,83 @@
+html{
+    background-color: white;
+}
+
+body {
+    padding-bottom: 40px;
+    text-align: center;
+    margin: 10px auto 0;
+    background-color: #3B3F44;
+    width: 90%;
+    color: #EC7E7F;
+    
+}
+body header {
+background-color: #4A4F55;
+padding: 1px 0;
+
+}
+
+body p {
+    font-size: 22px;
+}
+
+main {
+    width: 60%;
+    color: white;
+    margin: 0 auto;
+}
+
+.comments {
+font-size: 14px;
+color: lightgray;
+}
+
+.comments::before {
+    content: " ( ";
+}
+
+.comments::after {
+    content: " )";
+}
+
+body section p:nth-child(2n+1){
+    background-color:#88839E;
+}
+
+body section p:nth-child(2n){
+    background-color: #706a91;
+}
+
+body section p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-align: left;
+}
+* {
+    transition: all .1s ease-in;
+}
+
+body section p:hover {
+    background-color: #3e366d; 
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+body section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+}
+
+footer {
+    background-color: #4A4F55;
+    width: 60%;
+    margin: 0 auto;
+    padding: 1px 0;
+}

@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.first_page {
+    background-image: url(./DLlogo.svg), url(./DLfirst_page.svg);
+    /* height: 1070px;
+    width: 1920px; */
+    background-size: cover;
+}
+
+header {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+body header section {
+    padding-top: 22%;
+    padding-bottom: 16%;
+    width: 600px;
+    margin: 0 auto;
+    letter-spacing: 3px;
+}
+
+body header section h1 {
+    font-size: 40px;
+}
+
+body header section p {
+    line-height: 1.5;
+
+}
+
+body main section {
+    text-align: center;
+    width: 900px;
+    margin: 160px auto;
+    
+}
+body main section h2 {
+    text-transform: uppercase;
+}
+
+body main section div {
+    border: 2px solid black;
+    padding: 20px 160px;
+}

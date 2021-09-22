@@ -1,0 +1,18 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 4685" width="1920" height="4685">
+	<title>design-lab</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: none;stroke: #ffffff;stroke-width: 2 } 
+		.shp1 { fill: none;stroke: #f6f7fc;stroke-width: 2 } 
+		.shp2 { fill: #ffffff } 
+	</style>
+	<g id="header">
+		<g id="logo.svg">
+			<path id="Rectangle 1" class="shp0" d="M990.67 352.86L961.86 297.86L933.05 352.86L990.67 352.86Z" />
+			<path id="Ellipse 1" class="shp1" d="M961.5 285C980 285 995 299.87 995 318.21C995 336.56 980 351.43 961.5 351.43C943 351.43 928 336.56 928 318.21C928 299.87 943 285 961.5 285Z" />
+			<path id="Ellipse 1 copy 8" class="shp2" d="M961.86 347.86C963.85 347.86 965.46 349.46 965.46 351.43C965.46 353.4 963.85 355 961.86 355C959.87 355 958.26 353.4 958.26 351.43C958.26 349.46 959.87 347.86 961.86 347.86Z" />
+			<path id="Ellipse 1 copy 9" class="shp2" d="M988.52 347.86C990.51 347.86 992.12 349.46 992.12 351.43C992.12 353.4 990.51 355 988.52 355C986.53 355 984.91 353.4 984.91 351.43C984.91 349.46 986.53 347.86 988.52 347.86Z" />
+			<path id="Ellipse 1 copy 11" class="shp2" d="M933.04 347.86C935.03 347.86 936.65 349.46 936.65 351.43C936.65 353.4 935.03 355 933.04 355C931.05 355 929.44 353.4 929.44 351.43C929.44 349.46 931.05 347.86 933.04 347.86Z" />
+		</g>
+	</g>
+</svg>
