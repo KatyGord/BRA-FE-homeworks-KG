@@ -1,0 +1,37 @@
+html {
+    background-color: #E2E7EC;
+}
+body {
+    margin: 30px 80px 0;
+}
+body .big_article {
+    background-image: url(./car-svg\ \(1\).svg);
+    background-size: cover;
+    height: 540px;
+    width: 61%;
+    
+}
+
+body article {
+    height: 540px;
+    width: 25%;
+    background-color: white;
+}
+
+body main section {
+    display: flex;
+    justify-content: space-between;
+}
+
+body main section article{
+    margin: 20px;
+}
+body main section article img {
+    width: 100%;
+    height: auto;
+}
+
+body footer {
+    text-align: center;
+    color: gray;
+}

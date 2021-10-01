@@ -62,3 +62,7 @@ section div:hover {
     background-color: #0ec8cb7c;
     color: white;
 }
+
+section div:hover svg .shp0{
+    fill: white;
+}

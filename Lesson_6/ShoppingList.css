@@ -40,33 +40,36 @@ color: lightgray;
     content: " )";
 }
 
-body section p:nth-child(2n+1){
+body main p:nth-child(2n+1){
     background-color:#88839E;
 }
 
-body section p:nth-child(2n){
+body main p:nth-child(2n){
     background-color: #706a91;
 }
 
-body section p {
+body main p {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
     text-align: left;
+    
 }
 * {
     transition: all .1s ease-in;
 }
 
-body section p:hover {
+body main p:hover {
     background-color: #3e366d; 
     border-top: 2px solid white;
     border-bottom: 2px solid white;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
-body section {
+body {
     margin-top: 30px;
     margin-bottom: 30px;
 }

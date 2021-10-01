@@ -1,0 +1,76 @@
+*{
+    transition: all .1s ease-in;}
+
+html {
+    background-color: #FDDE7E;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+body section {
+    width: 25%;
+    text-align: center;
+    margin: 40px 0;
+    background-color: white;
+    height: 540px;
+}
+
+body section:hover {
+    margin-top: 20px;
+    /* height: 640px; */
+    height: auto;
+}
+
+body section:hover img{
+    padding-top: 10%;
+}
+
+body section:hover h1{
+    padding-top: 10%; 
+}
+
+body section:hover .explanation_p {
+    padding-bottom: 26px;;
+}
+
+body section .top_price {
+    padding-top: 12%;
+    color: green;
+    font-size: 52px;
+}
+
+body section h1 {
+    padding-bottom: 16px;
+    font-size: 36px;
+}
+
+/* body section p {
+    padding-bottom: 30px; */
+/* } */
+
+/* body .bronze_section { */
+
+    /* ето конечно супер что ты освоила етод метод добавления картинки.
+     Я думаю ты уже успела заметить недостаток етого метода - Резервирование места для изображения.
+     Конечно можно поступить чуть иначе вставить div - и ему дать background.
+     но тогда появится вопрос вчем разница между div и img.
+     Потом на моменте адаптации с таким background можно намучатся.
+     Такой метод за частую используют для мелких изображений, которым делают повторение. и тогда получается прикольный бекграунд.
+     */
+
+    /* background-image: url(./08_hw_1.bronze_bean.svg), url(./08_hw_1.bronze_cup.svg), url(./08_hw_1.bronze_smoke.svg);
+} */
+
+/* body .gold_section {
+    background-image: url(./08_hw_1.bronze_bean.svg), url(./08_hw_1.gold_cup.svg), url(./08_hw_1.gold_smoke.svg);
+}
+
+body .silver_section {
+    background-image: url(./08_hw_1.bronze_bean.svg), url(./08_hw_1.silver_cup.svg), url(./08_hw_1.silver_smoke.svg);
+} */
+

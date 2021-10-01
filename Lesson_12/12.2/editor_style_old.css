@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: ‘NeueHansKendrick’;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 18px;
+}
+ul,
+li,
+p,
+h4,
+h2 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+main {
+    background-color: #3D464A;
+    padding: 50px 65px;
+
+}
+
+main .white {
+    background-color: white;
+    border-left: 3px solid gray;
+}
+main .black {
+    background-color: black;
+    width: 70%;
+    padding-left: 40px;
+    padding-right: 0;
+    
+}
+
+main .black .black_big {
+    font-size: 48px;
+    line-height: 94px;
+    color: #fefefe;
+    font-weight: 400;
+    font-family: "Playfair Display";
+    border-bottom: 3px solid gray;
+}
+
+
+main .black .black_small {
+    font-size: 15px;
+    letter-spacing: 5px;
+    line-height: 109px;
+    color: #767676;
+    font-family: "Proxima Nova";
+    text-transform: uppercase;
+}
+
+main .yellow {
+    background-color: #F3B92C;
+    width: 814px;
+    padding: 20px 40px;
+}
+
+main .left_border {
+
+}
+
+main .white p {
+    width: 90%;
+    font-size: 27px;
+    line-height: 40px;
+    color: #000000;
+    font-family: "Georgia";
+    text-align: left;
+}
+
+main .white p span {
+    font-style: italic;
+}
