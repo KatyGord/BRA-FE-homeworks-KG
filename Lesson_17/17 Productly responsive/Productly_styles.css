@@ -1,0 +1,286 @@
+body{
+  font-family: poppins;
+  font-size: 16px;
+  margin: 20px 5%;
+}
+
+header {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  font-size: 40px;
+  text-decoration: none;
+  color: rgb(25, 59, 86);
+}
+
+.pic_logo {
+  width: 25px;
+}
+
+header nav {
+  margin-top: 10px;
+}
+header nav a {
+  margin: 20px;
+  text-decoration: none;
+  color: rgb(47, 40, 29);
+  }
+
+header nav .header_sign_in {
+  display: inline-block;
+  margin: 0 0 0 20px;
+}
+
+button {
+  border-color: gray;
+  padding: 10px 15px 10px 15px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #FA9904;
+  color: white;
+  border-color: transparent;
+}
+
+header nav .header_sign_in .navigation {
+  display: none; 
+/* вместо выпадающего меню просто припилила кнопку пока, типа плейсхолдера - не успею разобраться, как делать выпадающее меню, пока что) */
+}
+
+
+
+.get_started_button {
+  border-color: gray;
+  padding: 10px 15px 10px 15px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 40px;
+}
+
+main section .button_middle{
+  width: 100%;
+  text-align: center;
+}
+
+.big_pic {
+  width: 50%;
+}
+
+main section div .link_video {
+  color: #FA9904;
+  padding: 0 5px 0 5px;
+  position: relative;
+}
+
+main section div a .triangle{
+  position: absolute;
+  top: 2px;
+  left: 18px;
+  margin-left: -35px;
+}
+
+.with_pic {
+  display: flex;
+  justify-content: space-between;
+}
+
+main section div h1{
+  font-size: 44px;
+}
+
+.text {
+  width: 45%;
+}
+
+main section h2{
+  font-size: 36px;
+  text-align: center;
+}
+
+main section div .first_page_paragraph{
+  font-size: 18px;
+  line-height: 28px;
+}
+
+main section div p{
+  font-size: 18px;
+}
+
+main section div article{
+  padding: 0 20px 30px 0;
+  width: 210px;
+}
+
+
+.columns{
+  display: flex;
+  justify-content: space-around; 
+  flex-wrap: wrap;
+}
+
+main section h3{
+  font-size: 36px;
+  margin: 0;
+}
+
+main section h6{
+  font-size: 16px;
+  margin: 0;
+}
+
+p{
+  color: rgb(47, 40, 29);
+}
+
+main section {
+  margin-bottom: 30px;
+}
+
+.hidden_button {
+  display: none;
+}
+footer nav a{
+  text-decoration: none;
+  color: rgb(25, 59, 86);
+}
+
+footer div:first-child {
+  margin-left: 30%;
+}
+
+footer div button{
+  margin-top: 10px;
+}
+
+#email{
+  border: 2px solid gray;
+  padding: 10px 60px 10px 15px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  header nav {
+    margin-top: 8px;
+  }
+  header nav a {
+    margin: 20px 2px 20px 5px;
+  }
+  button, .get_started_button {
+    padding: 5px 10px 5px 10px;
+  }
+  
+  .first_page_paragraph {
+    font-size: 14px;
+  }
+  .header-logo {
+    font-size: 30px;
+  }
+  main section div h1{
+    font-size: 26px;
+    margin: 18% 0 0;
+  }
+  main section h3  {
+    font-size: 22px;
+  }
+  main section div h2  {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .header-logo {
+    font-size: 20px;
+  }
+  .link_video {
+    padding-left: 10px;
+  }
+  button {
+    padding: 10px;
+  }
+
+  header nav {
+    margin-top: 0;
+  }
+
+  header nav a {
+    display: none;
+    margin-left: 2%;
+  }
+
+  header nav .header_sign_in .navigation {
+    display: unset;
+  }
+  .big_pic {
+    display: none;
+  }
+  .text {
+    width: 100%;
+  }
+  main section div h1 { 
+    margin-top: 5%;
+  }
+  footer div:first-child {
+    margin-left: 0;
+  }
+  #email{
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .signing {
+    display: none;
+  }
+  main section div article{
+    padding: 0 20px 30px 0;
+    width: 100%;
+  }
+  
+  .columns{
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+  }
+  .footer_mini_columns {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+  }
+
+  .mini_columns {
+    display: flex;
+  }
+
+
+  .mini_columns_pic {
+    margin-top: 40px;
+  }
+  main section .columns div {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .triangle {
+    display: none;
+  }
+  main section div .link_video {
+    padding-top: 5px;
+    display: block;
+  }
+  #email{
+    padding: 5px 10px;
+  }
+  .buttons, .navigation {
+    padding: 5px 10px;
+  }
+}

@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 9" width="9" height="9">
+	<title>bullets</title>
+	<defs>
+		<image  width="12" height="12" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAAAAXNSR0IB2cksfwAAADlQTFRF7TMz7TMz7TMz7TMz7TMz7TMz7TMz7TMz7TMz7TMz7TMz7TMz7TMz7TMz7TMz7TMz7TMz7TMz7TMz2k7xwQAAABN0Uk5TAAmB3PkKxf/GgoTd3/3e4IP6hliasKsAAABASURBVHicXc03EgAgCAVRE+Z8/8M6XynUrXgFIMSXVNpoRXsm65DfCu4UgcTIgGEUoDIa0O+d5xr+jDTpf3+3AK14AiunXKJ+AAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="bullets">
+		<g id="bullets">
+			<use id="Ellipse 1 copy" href="#img1" x="-2" y="-1" />
+		</g>
+	</g>
+</svg>

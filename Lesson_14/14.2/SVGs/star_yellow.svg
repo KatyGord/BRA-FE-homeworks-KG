@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12" height="12">
+	<title>content</title>
+	<defs>
+		<image  width="12" height="12" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAAAAXNSR0IB2cksfwAAAD9QTFRFAAAA978W978W978W978W978W978W978W978W978W978W978W978W978W978W978W978W978W978W978W978Wh0lDGgAAABV0Uk5TACFXAoorljVCcg9PW3kMlTSQOEUaTIi4HwAAAFJJREFUeJxFi0kWwCAIxXDCiTrf/6wV6at/AckiADyl4E7ry8Za84tDdAd8CCEixv08pE2ymHaQhbNkxExf/7A8wqUiEdZypPUBMHo7MhffNQFejwACkV7fjXMAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="content">
+		<g id="stars">
+			<use id="Vector Smart Object copy 3" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>
