@@ -20,6 +20,11 @@ header {
   width: 25px;
 }
 
+.wrap {
+  display: none;
+}
+
+
 header nav {
   margin-top: 10px;
 }
@@ -218,6 +223,10 @@ footer div button{
 
   header nav .header_sign_in .navigation {
     display: unset;
+  }
+
+  .wrap:active .navigation {
+    display: block;
   }
   .big_pic {
     display: none;

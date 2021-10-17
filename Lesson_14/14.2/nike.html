@@ -14,8 +14,8 @@
         <img class="logo header__logo" src="./SVGs/logo.svg" alt="LOGO">
     </header>
     <main class="main body__main">
-        <section class="view">
-            <img class="photo view__photo" src="./SVGs/Nike-SB-Stefan-Janoski-Max.svg" alt="Photo">
+        <section class="view main__view main__view--position">
+            <img class="view__photo view__photo--position" src="./SVGs/Nike-SB-Stefan-Janoski-Max.svg" alt="Photo">
             <div class="colors view__colors">
                 <img class="colors__option" src="./SVGs/bullet_black.svg" alt="Black color">
                 <img class="colors__option" src="./SVGs/bullet_white.svg" alt="White color">
@@ -23,20 +23,23 @@
                 <img class="colors__option" src="./SVGs/bullet_red.svg" alt="Red color">
             </div>
         </section>
-        <section class="description">
+        <section class="description main__description main__description--position">
             <h2 class="description__name description__name--position">Nike SB Stefan Janoski Max</h2>
             <p class="description__spec description__spec--position ">Unisex Skateboarding Shoe </p>
 
             <div class="rating description__rating">
-                <input class="rating__grade" type="radio" name="Grade" value="1">wrap
+                <input class="rating__grade" type="radio" name="Grade" value="1">
                 <input class="rating__grade" type="radio" name="Grade" value="2">
                 <input class="rating__grade" type="radio" name="Grade" value="3">
                 <input class="rating__grade" type="radio" name="Grade" value="4">
                 <input class="rating__grade" type="radio" name="Grade" value="5">
             </div>
-            <button>Size</button>
-            <button>Qty</button><br>
-            <button class="buy description_buy">Add to cart</button>
+
+            <button class="options description__options description__options--position">Size <img
+                    src="./SVGs/Rectangle.svg" alt="drop down"></button>
+            <button class="options description__options description__options--position">Qty <img
+                    src="./SVGs/Rectangle.svg" alt="drop down"></button><br>
+            <button class="add-to-cart description__add-to-cart">Add to cart</button>
 
 
         </section>
