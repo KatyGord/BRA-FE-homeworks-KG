@@ -4,17 +4,28 @@ html {
 }
 .body {
     background-color: #111A28;
-    margin: 50px 20%;
+    margin: 50px auto;
     padding: 2%;
+    width: 60%;
+    max-width: 800px;
+    
 }
-.body__main {
+.body .main {
     display: flex;
     justify-content: space-around;
 }
-
-.view__photo {
-    margin: 65px auto;
+.main__view--position {
+    padding-right: 40px;
 }
+.view__photo {
+    width: 100%;
+}
+
+.view__photo--position {
+    margin: 65px auto;
+
+}
+
 
 .view__colors { 
     text-align: center;
@@ -27,7 +38,6 @@ html {
 .description__name {
     font-size: 30px;
     color: #e1e1e1;
-    text-decoration: underline;
 }
 
 .description__name--position {
@@ -48,10 +58,12 @@ html {
     width: 75px;
     height: 15px;
     margin: 0;
+    margin-bottom: 40px;
     background-image: url(./SVGs/star.svg);
     background-size: 15px auto;
-}
 
+}
+/* решение со звездочками списано тут, сама бы не сделала https://www.youtube.com/watch?v=EbajTYI-gg8&list=PLd9NU5b55X5AheA0dUgEhCcbFdVz3UfpK&index=15&t=1474s  */
 .rating__grade {
     position: absolute;
     top: 0;
@@ -96,4 +108,79 @@ html {
     background-image: url(./SVGs/star.svg);
 }
 
+.description__options {
+    border: 1px solid gray;
+    width: 65px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #111A28;
+    color: #e1e1e1;
+}
+.description__options--position {
+    margin-bottom: 20px;
+}
 
+.add-to-cart {
+    border: 1px solid gray;
+    width: 180px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #111A28;
+    color: #e1e1e1;
+    margin-bottom: 30px;
+
+}
+
+.add-to-cart:hover {
+    background-color: #202835;
+}
+
+@media screen and (max-width: 1024px) {
+    .body {
+        width: 70%;
+    }
+    .description__name {
+        font-size: 26px;
+    }
+
+    .description__spec {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .body {
+        width: 80%;
+    }
+    .description__name {
+        font-size: 20px;
+    }
+    .description__spec {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .body {
+        width: 90%;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .main__view--position {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .view__photo {
+        width: 90%;
+    }
+    .view__photo--position {
+        margin: 10px auto 20px;
+
+    }
+    .main__description--position {
+        padding-left: 20px;
+    }
+}

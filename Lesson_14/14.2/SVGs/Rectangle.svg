@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6" width="11" height="6">
+	<title>content</title>
+	<defs>
+		<image  width="14" height="9" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAJCAMAAAA1k+1bAAAAAXNSR0IB2cksfwAAAD9QTFRFTFJaTFJaTFJaTFJaTFJaTFJaTFJaTFJaTFJaTFJaTFJaTFJaTFJaTFJaTFJaTFJaTFJaTFJaTFJaTFJaTFJa6BzU9QAAABV0Uk5TAKg9N+VFRDHjSjIs4lAo4ZPgIsEjl4YnWQAAAD1JREFUeJxjYEADjExQBhMjiGRmYQXz2FiYwTQ7ByeQ5OTggqri5uFl4OXhhmvn4xcQ5EMyTkhYBN0GbAAASIcBIJ0ZaeUAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="content">
+		<g id="size">
+			<use id="Rectangle 2" href="#img1" x="-1" y="-1" />
+		</g>
+	</g>
+</svg>

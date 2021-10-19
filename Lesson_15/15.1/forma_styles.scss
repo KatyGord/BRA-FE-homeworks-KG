@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+* {
+    --main_font-family: "Raleway";
+    --main_color: #262626
+}
+
+body {
+    background-image: url(./background.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+main {
+    margin: 5%;
+    .main_header {
+        font-size: 90px;
+        line-height: 25px;
+        color: var(--main_color);
+        font-family: var(--main_font-family);
+        text-align: center;
+    }
+    .sub_header {
+        font-size: 17px;
+        color: var(--main_color);
+        font-family: var(--main_font-family);
+        text-align: center;
+    }
+    .contact {
+        display: flex;
+        justify-content: space-evenly;
+        font-family: var(--main_font-family);
+        .contact_form {
+            .forms {
+                padding: 15px;
+                width: 500px;
+                background-color: rgb(2, 196, 196, 0.5);
+                margin-bottom: 10px;
+                border: none;
+                color: white;
+
+            }
+            .forms::placeholder {
+                font-size: 15px;
+                color: #ffffff;
+                font-family: var(--main_font-family);
+            }
+            .forms:focus {
+                background-color: rgb(2, 196, 196);
+                outline: none;
+                border-left: 2px solid #355B82;
+                font-weight: bold;
+                color: white;
+                width: 498px;
+            }
+            .list_of_options {
+                margin-bottom: 10px;
+                
+                .choices {
+                    font-size: 15px;
+                    font-family: var(--main_font-family);
+                }
+            }
+    
+        }
+    
+        .contact_details {
+            h5 {
+                font-size: 17px;
+                color: var(--main_color);
+                font-family: var(--main_font-family);
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            p {
+                font-size: 18px;
+                color: var(--main_color);
+                font-family: var(--main_font-family);
+            }
+        }
+    }
+}
