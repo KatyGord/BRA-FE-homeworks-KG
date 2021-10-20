@@ -1,4 +1,4 @@
-/* reset */
+/* reset - отдельным файлом подключай */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -47,10 +47,14 @@ table {
 
 @font-face {
     font-family: "Proxima Nova";
-    src: url(./Proxima_Nova/Proxima\ Nova\ Regular.otf);
+    src: url(./Proxima_Nova/Proxima\ Nova\ Regular.otf); /* обрати внимание как плохо подключаются файлы с пробелами в названиях*/
 }
 
 html {
+     /* на html - нестоит вешай какието стили.
+     Ето может ссыграть стобой плохую шутку.
+     тотже ефект получешь с body  ну и с ним стоит быть окуратным
+     */
     background-color: #464E53;
 }
 
@@ -103,9 +107,10 @@ header div {
     display: flex;
     align-items: flex-end;
 }
-/* Не получается сделать иконку непрозрычной при наведении  */
-header div svg g#Icons:hover{
-    opacity: 1;
+/* исправил */
+header div svg use:hover{
+    opacity: 1 !important;
+    cursor: pointer;
 }
 
 main {

@@ -1,7 +1,63 @@
 * {
+     /*
+       Такой записью ты перечислела все едлементы на странице
+       нестоит так делать потому что ты можешь создать нежелательное поведение для других елементов.
+       поетому лучше указывай болие спецефичные селекторы  shop_item img / insta_item img
+     */
     transition: all .3s ease-in;
 }
 
+/*
+На следуйших работах я от тебя хочу видеть работы:
+1) по БЕМу! только согласно правилам методологии, но без МОДИФИКАТОРА
+    стили задавай для елементов и блоков.
+2) И css-препроцессор
+
+
+
+Теорию что такое БЕМ :
+БЛОК - ето елемент страници который может быть копирован в любое место страници, без искажения стилей внутри.
+       блоки могут вкладыватся друг в друга.
+ЕЛЕМЕНТ - строго пренадлежит БЛОКу внутри которого он находится. Елемента за блоком быть не может.
+МОДИФИКАТОР - класс который будет изменять повидение ЕЛЕМЕНТов и БЛОКов и неважно где.
+следовательно
+
+СЛЕДОВАТЕЛЬНО нужно строить дерево css классов в HTMLе.
+ К примеру такая структура в HTML :
+краткая запись (сделана для Emmet плагина. Вставить в HTML и нажать ТАБ):
+  ``` .header>.header__logo>.header__icon+.header__title^+.header__menu.menu>.menu__item*4>.menu__icon+.menu__title ```
+развернутая запись : ```
+    <div class="header">
+        <div class="header__logo">
+            <div class="header__icon"></div>
+            <div class="header__title"></div>
+        </div>
+        <div class="header__menu menu">
+            <div class="menu__item">
+                <div class="menu__icon"></div>
+                <div class="menu__title"></div>
+            </div>
+            <div class="menu__item">
+                <div class="menu__icon"></div>
+                <div class="menu__title"></div>
+            </div>
+            <div class="menu__item">
+                <div class="menu__icon"></div>
+                <div class="menu__title"></div>
+            </div>
+            <div class="menu__item">
+                <div class="menu__icon"></div>
+                <div class="menu__title"></div>
+            </div>
+        </div>
+    </div>
+```
+В данном примере:
+header и menu --- Ето Блоки
+menu__item / menu__title / menu__icon --- Елементы блока "menu"
+header__logo / header__icon / header__menu  --- Елементы блока "header"
+МОДИФИКАТОРы - я неприводил в пример, для начала нужно освоить такую структуру.
+*/
 body {
     margin: 85px;
     padding: 0;
@@ -51,7 +107,6 @@ body {
 }
 
 .shop_item:hover img {
-
     transform: scale(1.3);
 }
 
