@@ -1,0 +1,65 @@
+:root {
+    --highlighting_color: #4A4FF2;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    margin: 60px 125px;
+    font-family: 'Mulish', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+header .menu a:first-child {
+    margin-right: 30px;
+}
+
+.highlighting {
+    color: var(--highlighting_color);
+}
+
+main .intro_part {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.intro_part .intro {
+    width: 70%;
+}
+
+main .intro_part .intro .title {
+    font-size: 22px;
+}
+
+main .intro_part .intro .introduction {
+    font-size: 40px;
+    margin: 0;
+}
+
+.quote_flex {
+    display: flex;
+    align-items: flex-end;
+}
+
+main .intro_part .quote {
+    color: #707070;
+    font-style: italic;
+    font-size: 18px;
+    margin: 0 5px 0 30px;
+}
+
+main .intro_part .quote::before {
+    content: " ";
+}
