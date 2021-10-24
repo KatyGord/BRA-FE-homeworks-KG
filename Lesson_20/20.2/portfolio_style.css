@@ -2,26 +2,31 @@
     --highlighting_color: #4A4FF2;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap');
-
-body {
+.body {
     margin: 60px 125px;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Mulish';
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
-header {
+.header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 100px;
 }
 
-header .menu a:first-child {
+.menu__link,
+.social-media__social-media-link,
+.work-areas__links {
+    text-decoration: none;
+    color: black;
+}
+
+.menu__link {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu__link:first-child {
     margin-right: 30px;
 }
 
@@ -29,37 +34,238 @@ header .menu a:first-child {
     color: var(--highlighting_color);
 }
 
-main .intro_part {
+.intro-part {
     display: flex;
     justify-content: space-between;
     margin-bottom: 80px;
 }
 
-.intro_part .intro {
+.intro-part__intro {
     width: 70%;
 }
 
-main .intro_part .intro .title {
+.intro__title {
     font-size: 22px;
 }
 
-main .intro_part .intro .introduction {
+.intro__introduction {
     font-size: 40px;
     margin: 0;
 }
 
-.quote_flex {
+.intro-part__quote-part {
     display: flex;
     align-items: flex-end;
+    margin: 0 40px 0 30px;
+    min-width: 208px;
 }
 
-main .intro_part .quote {
+.quote-part__quote {
     color: #707070;
     font-style: italic;
     font-size: 18px;
     margin: 0 5px 0 30px;
+    white-space: nowrap;
 }
 
-main .intro_part .quote::before {
-    content: " ";
+.quote-part::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 1px;
+    margin-bottom: 30px;
+    margin-right: -60px;
+    background-color: #707070;
+    /* вернуться к этому, при большем количестве текста в блоке работать не будет */
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 100px;
+}
+
+.projects__image {
+    width: 100%;
+    height: 100%;
+}
+
+.projects__column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.about-us__work-areas {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 145px;
+    margin-top: 43px;
+    margin-right: 40px;
+    white-space: nowrap;
+}
+
+.description {
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.description__text {
+    margin: 0;
+}
+
+.work-areas__wrapper:first-child {
+    margin-right: 66px;
+}
+
+.work-areas__links {
+    line-height: 1.5;
+    color: #707070;
+    font-size: 18px;
+}
+
+.CV {
+    border-top: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+    margin-bottom: 110px;
+}
+
+.CV__contest-details {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 0.5fr;
+    padding: 40px 0;
+}
+
+.CV__contest-details:first-child {
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.CV__nomination {
+    grid-column-start: 2;
+}
+
+.CV__year {
+    font-size: 16px;
+    text-align: end;
+    margin: 0;
+}
+
+.CV__Contest-name {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.CV__nomination {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.CV__participant {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal
+}
+
+.CV__work-description {
+    color: #707070;
+    font-size: 16px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu__wrapper-links {
+    display: inline-block;
+    margin-right: 90px;
+}
+
+.menu__social-media {
+    display: inline-block;
+}
+
+.social-media__social-media-link {
+    margin-left: 20px;
+}
+
+.social-media__social-media-link:first-child {
+    margin-left: 0;
+}
+
+
+.project-8__about-project-detailed {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.about-project-detailed__sub-title {
+    font-size: 40px;
+    margin: 0;
+}
+
+.about-project-detailed__info {
+    color: #414141;
+    font-size: 16px;
+    margin: 0;
+    padding-top: 29px;
+}
+
+.data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 42px);
+    white-space: nowrap;
+    column-gap: 40px;
+    margin-left: 140px;
+}
+
+/* тут не хватает бордеров между строками */
+.data__category {
+    margin: 0;
+    font-size: 18px;
+    color: #888888;
+}
+
+.data__details {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project-8__illustration {
+    margin-bottom: 45px;
+}
+
+.illustration__image {
+    width: 100%;
+}
+
+.project-8__info {
+    color: #414141;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+.small-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 130px;
+}
+
+.small-images__image {
+    width: 100%;
 }

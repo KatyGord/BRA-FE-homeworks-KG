@@ -1,0 +1,78 @@
+<style>
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 5px 20px;
+}
+.grid {
+	display: grid;
+	grid-gap: 10px;
+}
+.wrapper {
+  grid-template-columns: 1fr 1fr ;
+  background-color: seagreen;
+  padding: 10px;
+  width: 50%;
+  margin: 20px auto;
+}
+.grid.left {
+	grid-column: 1 / span 1;
+	grid-auto-rows: min-content;
+}
+.grid.right {
+	grid-column: span 1 / -1;
+  grid-auto-rows: min-content;
+}
+.tip {
+  grid-column: 1 / -1;
+}
+.pic>img {
+  max-width: 100%;
+  max-heigth: 100%;
+}
+
+
+</style>
+
+<div class="wrapper grid">
+	
+	<div class="box tip">tip:
+		<br/> Try resizing the browser window.
+	</div>
+
+	<div class="grid left">
+		<div class="box git">git
+			<br/> Notifications at GH: 0
+		</div>
+		<div class="box pic">
+			<span class="pictext">picture from unsplash</span>
+			<img src="https://source.unsplash.com/random/300x400" />
+		</div>
+	</div>
+
+	<div class="grid right">
+		<div class="box weather">weather
+			<br/> Temp 10.3°C
+			<br/> clear sky01d
+			<br/> Clouds 0%
+			<br/> Visibility 10000m
+			<br/> Wind 1.5 m/s @ 290°
+			<br/> Humidity 37%
+			<br/> Pressure 1016 hPa
+			<br/> Sunrise 03:47
+			<br/> Sunset 23:01
+		</div>
+		<div class="box moon">moon
+			<br/> Zodiac: gemini
+			<br/> Illumination: 36.2%
+			<br/> phase: Waning crescent
+		</div>
+	</div>
+
+	<div class="box tip">tip:
+		<br/> Comment out 'grid-auto-rows: min-content;' at .grid.right and/or .grid.left in css and try resizing the browser window again.
+	</div>
+
+</div>

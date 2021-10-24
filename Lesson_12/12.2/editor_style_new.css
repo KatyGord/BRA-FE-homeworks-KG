@@ -1,57 +1,145 @@
 /* reset - отдельным файлом подключай */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 /* reset */
 
 @font-face {
     font-family: "Proxima Nova";
-    src: url(./Proxima_Nova/Proxima\ Nova\ Regular.otf); /* обрати внимание как плохо подключаются файлы с пробелами в названиях*/
+    src: url(./Proxima_Nova/Proxima\ Nova\ Regular.otf);
+    /* обрати внимание как плохо подключаются файлы с пробелами в названиях*/
 }
 
-html {
-     /* на html - нестоит вешай какието стили.
+body {
+    /* на html - нестоит вешай какието стили.
      Ето может ссыграть стобой плохую шутку.
      тотже ефект получешь с body  ну и с ним стоит быть окуратным
      */
@@ -107,8 +195,10 @@ header div {
     display: flex;
     align-items: flex-end;
 }
+
 /* исправил */
-header div svg use:hover{
+/* KG: Класс! вот оно в чем дело было... */
+header div svg use:hover {
     opacity: 1 !important;
     cursor: pointer;
 }
@@ -145,8 +235,8 @@ main h1 {
     font-size: 78px;
     letter-spacing: 4px;
     color: #2a2a2a;
-    font-family: "Futura PT";  
-    text-transform: uppercase; 
+    font-family: "Futura PT";
+    text-transform: uppercase;
 }
 
 main .epigraph {
@@ -164,6 +254,7 @@ main p {
     padding-bottom: 40px;
     line-height: 40px;
 }
+
 main p span {
     font-style: italic;
 }
