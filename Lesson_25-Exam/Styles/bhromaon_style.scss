@@ -1,0 +1,522 @@
+//first page
+
+.introduction {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/Background_1page.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+
+&__top {
+    flex: 1 1 auto;
+}
+
+&__wraper-top{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+&__search-view {
+    margin-top: 50px;
+}
+
+&__scroll {
+    margin-top: 116px;
+    text-align: center;
+}
+}
+
+.company {
+    text-align: center;
+
+&__name {
+    font-size: 48px;
+    letter-spacing: 5px;
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    text-transform: uppercase;
+}
+
+&__slogan {
+    font-size: 22px;
+    letter-spacing: 6px;
+    color: #ffffff;
+    font-family: "Josefin Sans";
+}
+}
+
+.search-view {
+    width: 647px;
+&__field {
+    width: 76%;
+    padding: 20px 10px;
+    border: none;
+    position: relative;
+}
+
+&__field::placeholder {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #999999;
+    font-family: "Josefin Sans";
+    text-align: center;
+}
+
+&__search-button {
+    width: 22%;
+    position: absolute;
+}
+}
+
+.search-button {
+    height: 55px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-family: "Aleo";
+    text-align: center;
+    text-transform: uppercase;
+    border-width: 0;
+    background-color: #5474FD;
+    border: 3px solid white;
+
+    // исправить позиции кнопки и текста плюс рамка вокруг кнопки
+
+    &__logo {
+        position: absolute;
+    }
+}
+
+.search-button:hover {
+    background-color: rgb(167, 114, 16);
+}
+
+.scroll {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    font-family: "Josefin Sans";
+&__text {
+    color: #ffffff;
+    text-decoration: none;
+}
+&__icon {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+}
+
+.about-us-navigation {
+    background-color: #5474FD;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 327px;
+&__menu {
+    width: 50%;
+}
+}
+
+.logo-link {
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    text-transform: uppercase;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+
+&__link {
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: "Aleo";
+    text-transform: uppercase;
+    margin: auto 0;
+    margin-left: 15px;
+}
+}
+
+//page 2
+
+.section-why-us {
+    width: 100%;
+&__description {
+    height: 70vh;
+    background-image: url(../Images/Background_2page.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 327px;
+    padding-left: 327px; 
+}   
+
+&__guidance {
+    height: 30vh;
+    background-color: #333333;
+}
+}
+
+.description {
+&__text {
+    width: 50%;
+    padding-right: 20px;
+    margin-top: 17%;  
+}
+
+&__title {
+    margin-bottom: 55px;
+    font-size: 36px;
+    color: #ffffff;
+    font-family: "Aleo";
+}
+
+&__texts {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #e8e8e8;
+    font-family: "Josefin Sans";
+    margin-bottom: 35px;
+    font-weight: 300;
+}
+&__pictures {
+    margin-top: 10%;
+}
+}
+
+.pictures {
+    width: 50%;
+    
+&__wrapper1 {
+    display: flex;
+    justify-content: start;
+}
+
+&__pic1 {
+    width: 60%;
+    
+}
+
+&__wrapper2 {
+    display: flex;
+    justify-content: end;
+}
+&__pic2 {
+    width: 60%;
+}
+
+&__img {
+    width: 100%;
+}
+}
+
+.explore-button {
+    height: 55px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-family: "Aleo";
+    text-align: center;
+    text-transform: uppercase;
+    border-width: 0;
+    background-color: rgb(83, 116, 253, 0.7);
+    padding: 0 35px;
+}
+
+.explore-button:hover {
+    background-color: rgb(167, 114, 16);
+}
+
+//практически полностью скопировано у Димы 
+
+.guidance {
+    height: 30vh;
+    background: #333333;
+    padding: 0 327px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+&__wrapper {
+        display: flex;
+        height: fit-content;
+    }
+
+&__decor-line {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 60px;
+    align-self:flex-start;
+    padding-bottom: 115px;
+}
+
+&__decor-line::before {
+    content: '';
+    border-top: 1px dashed black;
+    border-radius: 50%;
+    width: 460px;
+    height: 498px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+&__process {
+    margin-right:-85px ;
+    margin-left:-85px ;
+    align-self:flex-end;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+}
+
+&__image {
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+&__step {
+    min-width: 212px;
+    font-size: 36px;
+    font-weight: 300;
+    font-family: "Aleo";
+    color: rgb(232, 232, 232);
+    text-align: center;
+    white-space: nowrap;
+}
+}
+
+//page 3
+
+.destination1 {
+    background-image: url(../Images/Background_3page.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ 
+&__wrapper {
+    display: flex;
+    padding-top: 15%;
+    margin-right: 327px;
+    margin-left: 327px;
+    justify-content: start;
+}
+}
+
+.destination-description {
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 40px 27px;
+    width: 30%;
+    min-width: 541px;
+
+&__country {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #e8e8e8;
+    font-family: "Josefin Sans";
+    padding-bottom: 27px;
+}
+&__name {
+    font-size: 20px;
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    text-transform: uppercase;
+    padding-bottom: 27px;
+}
+
+&__text {
+    font-size: 16px;
+    color: #e8e8e8;
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+&__booking {
+    height: 55px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-family: "Aleo";
+    text-align: center;
+    text-transform: uppercase;
+    border-width: 0;
+    background-color: rgb(83, 116, 253, 0.7);
+    padding: 0 35px;
+}
+
+&__booking:hover {
+    background-color: rgb(167, 114, 16);
+}
+
+}
+
+//page 4
+
+.destination2 {
+    background-image: url(../Images/Background_4page.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ 
+&__wrapper {
+    display: flex;
+    justify-content: end;
+    padding-top: 15%;
+    margin-right: 327px;
+    margin-left: 327px;
+}
+}
+
+// page 5
+
+.reviews {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Images/Background_5page.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+&__wrapper {
+    margin-right: 327px;
+    margin-left: 327px;
+}
+
+&__review-title {
+    padding: 112px 0 90px;
+    text-align: center;
+}
+
+&__example-review {
+    display: grid;
+    grid-template-columns: 1.2fr 1.8fr;
+    background-color: #333333;
+}
+}
+
+.example-review {
+&__text {
+    padding: 50px 56px;
+}
+
+&__name {
+    font-size: 20px;
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    text-transform: uppercase;
+    padding-bottom: 27px;
+}
+
+&__review-text {
+    font-size: 16px;
+    color: #e8e8e8;
+    font-family: "Josefin Sans";
+    font-weight: 300;
+}
+// опустить скобки 
+&__review-text::before {
+    content: "\201c";
+    color: #5474fd;
+    font-weight: bold;
+    font-size: 36px;
+}
+}
+
+.review-title {
+    font-size: 36px;
+    color: #ffffff;
+    font-family: "Aleo";
+}
+
+.picture-review {
+    width: 100%;
+    height: 100%;
+&__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 75% 50%;
+}
+}
+
+// footer 
+
+.footer {
+    background-color: #232323;
+
+&__company-details {
+    padding-bottom: 54px;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+}
+
+.company-details {
+    width: 160px;
+    
+&__main-link {
+    text-decoration: none;
+}
+
+&__name {
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-family: "Josefin Sans";
+    text-transform: uppercase;
+    padding-bottom: 14px;
+    font-weight: bold;
+}
+
+&__slogan {
+    font-size: 16px;
+    color: #e8e8e8;
+    font-family: "Josefin Sans";
+    font-weight: 300;
+    padding-bottom: 28px;
+    text-align: justify;
+    width: 100%;
+    // не получается растянуть текст по всей ширине 
+
+}
+
+&__social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+&__social-media-logos {
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+&__links:hover #Dribbble-Light-Preview {
+    fill: #5474FD;
+}
+}
+
+
+    

@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+	<title>Header</title>
+	<defs>
+		<image  width="22" height="24" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAYCAMAAADJYP15AAAAAXNSR0IB2cksfwAAAPxQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8isEYwAAAFR0Uk5TADOb1+DZ1aA7B5rGSwRBu6YMBr1wZsiWeGWpKwG1P41SNbDQ28kWxRnSCNwDk0wsqE+iaVW5CsdfVPWPDa02v5j/hkq03cPBUwKFHRoFkISRg5J5fIRJgQAAALhJREFUeJxjYCAdMDIxs7CysXOgCHJycfNwMjDw8vELCCJEhYRFYExRMYS4uARCiaQUjCXNLYNkoKwclCGvgGyPohKUoSyILMygAtXLiupWVTWswuoaEFpTC0VYWwdC6+ohi+rzQxmMwsjCBoYwlpExQtTEFO4JM3MLGNPSyhqhxMZWyQ6kSF/A3sHRCclEZxdXN3cVew9PGWtHL2SrdLx9fEG0jJ+jPwMWgFM8wDEQq3hQMDZhPAAAUysRrjdZDikAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Header">
+		<g id="Search Bar">
+			<use id="" href="#img1" x="-1" y="-2" />
+		</g>
+	</g>
+</svg>

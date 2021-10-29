@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 8" width="15" height="8">
+	<title>Header</title>
+	<defs>
+		<image  width="17" height="11" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAMAAACu/pY1AAAAAXNSR0IB2cksfwAAAFpQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Y2SxRAAAAB50Uk5TAE4DBl8Q46Wx2iOt3BwFrN0dqt4epqngIOLhIcciQi8rVwAAAE5JREFUeJxjYMACGJngTGYWEMnKxg4TYubgZAXRXDAhZm4eXogUVIiPX0AQph0sxCQkLIIwnItNlFlMXALZPi42SSlpVCdwychicxkOAADP0wIxBa3AwQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Header">
+		<g id="Scroll Down">
+			<use id="" href="#img1" x="-1" y="-1" />
+		</g>
+	</g>
+</svg>

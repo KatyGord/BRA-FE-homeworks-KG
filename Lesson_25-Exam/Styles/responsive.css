@@ -1,0 +1,125 @@
+@media screen and (max-width: 1570px) {
+    .about-us-navigation__logo-link {
+        margin-right: 30px;
+    }
+    
+    .about-us-navigation__menu {
+        flex: 1 1 auto;
+    }
+}
+
+
+@media screen and (max-width: 1310px) {
+    .introduction__about-us-navigation {
+        padding: 22px 15%;
+    }
+
+    .section-why-us__description {
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+
+    .section-why-us__guidance {
+        padding: 0 15%;
+    }
+
+    .destination1__wrapper {
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+
+    .destination2__wrapper {
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+
+    .reviews__wrapper {
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+
+}
+
+@media screen and (max-width: 1220px) {
+    .guidance__decor-line {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .description__text {
+            width: 50%;
+            padding-right: 20px;
+            margin-top: 5%;  
+        }
+    
+    .guidance__decor-line {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 1066px) {
+    .guidance__decor-line {
+        display: none;
+    }
+
+    .guidance__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .guidance__process {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .guidance__step {
+        font-size: 28px;
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .introduction__about-us-navigation {
+        padding: 22px 10%;
+    }
+
+    .section-why-us__description {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .section-why-us__guidance {
+        padding: 0 10%;
+    }
+
+    .destination1__wrapper {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .destination2__wrapper {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .reviews__wrapper {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    .description__text {
+        width: 80%;
+        padding-right: 0;
+    }
+    .pictures__wrapper1 {
+        display: flex;
+        justify-content: end;
+    }
+    
+
+}
+
+    
