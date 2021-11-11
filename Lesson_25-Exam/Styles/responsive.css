@@ -2,24 +2,23 @@
     .about-us-navigation__logo-link {
         margin-right: 30px;
     }
-    
+
     .about-us-navigation__menu {
         flex: 1 1 auto;
     }
 }
-
 
 @media screen and (max-width: 1310px) {
     .introduction__about-us-navigation {
         padding: 22px 15%;
     }
 
-    .section-why-us__description {
+    .about__description {
         padding-right: 15%;
         padding-left: 15%;
     }
 
-    .section-why-us__guidance {
+    .about__guidance {
         padding: 0 15%;
     }
 
@@ -48,17 +47,38 @@
 
 @media screen and (max-width: 1110px) {
     .description__text {
-            width: 50%;
-            padding-right: 20px;
-            margin-top: 5%;  
-        }
-    
+        width: 100%;
+        display: block;
+    }
+
     .guidance__decor-line {
         width: 220px;
     }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .pictures__wrapper2 {
+        display: none;
+    }
+
+    .pictures__pic1 .pictures__img {
+        margin: 0;
+        margin-bottom: 16px;
+        width: 60%;
+    }
+
+    .description__title {
+        padding-top: 7%;
+        margin-bottom: 30px;
+
+    }
+
 }
 
 @media screen and (max-width: 1066px) {
+
     .guidance__decor-line {
         display: none;
     }
@@ -67,6 +87,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        margin-top: 78px;
     }
 
     .guidance__process {
@@ -81,18 +102,17 @@
     }
 }
 
-
 @media screen and (max-width: 960px) {
     .introduction__about-us-navigation {
         padding: 22px 10%;
     }
 
-    .section-why-us__description {
+    .about__description {
         padding-right: 10%;
         padding-left: 10%;
     }
 
-    .section-why-us__guidance {
+    .about__guidance {
         padding: 0 10%;
     }
 
@@ -110,16 +130,125 @@
         margin-right: 10%;
         margin-left: 10%;
     }
+
     .description__text {
         width: 80%;
         padding-right: 0;
     }
-    .pictures__wrapper1 {
-        display: flex;
-        justify-content: end;
+}
+
+@media screen and (max-width: 840px) {
+    .about-us-navigation {
+        z-index: 3;
     }
-    
+
+    .about-us-navigation__menu {
+        display: none;
+    }
+
+    .menu__link {
+        padding: 10px;
+        text-align: end;
+        display: block;
+    }
+
+    .check-label {
+        padding-top: 8px;
+        position: relative;
+        cursor: pointer;
+
+    }
+
+    .nav-icon {
+        background-color: rgb(255, 255, 255);
+        display: block;
+        height: 2px;
+        width: 30px;
+        position: relative;
+    }
+
+    .nav-icon::before {
+        background-color: rgb(255, 255, 255);
+        content: " ";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: all .2 ease-out;
+        top: 8px;
+    }
+
+    .nav-icon::after {
+        background-color: rgb(255, 255, 255);
+        content: " ";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: all .2 ease-out;
+        top: -8px;
+    }
+
+    .check {
+        display: none;
+    }
+
+    .check:checked~.menu {
+        display: block;
+        z-index: 3;
+    }
+
+    .search-view {
+        width: 386px;
+    }
+
+    .search-button__logo {
+        display: none;
+    }
+
+    .about__guidance {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about__guidance {
+        display: none;
+    }
+
+    .destination-description {
+        width: 100%;
+    }
+
+    .reviews__example-review {
+        display: block;
+    }
+
+    .example-review__picture-review {
+        display: none;
+    }
+
+    .reviews__review-title {
+        padding: 70px 0 40px;
+    }
 
 }
 
-    
+@media screen and (max-width: 425px) {
+    .search-view__field {
+        width: 98%;
+    }
+
+    .search-button {
+        left: 50%;
+        transform: translateX(-40%);
+    }
+
+    .pictures__wrapper1 {
+        display: none;
+    }
+
+    .description__title {
+        padding-top: 26%;
+    }
+}

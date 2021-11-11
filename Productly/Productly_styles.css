@@ -1,4 +1,4 @@
-body{
+body {
   font-family: poppins;
   font-size: 16px;
 }
@@ -26,7 +26,7 @@ header nav a {
   margin: 20px;
   text-decoration: none;
   color: rgb(47, 40, 29);
-  }
+}
 
 header nav .header_sign_in {
   display: inline-block;
@@ -50,7 +50,7 @@ button {
   margin-right: 40px;
 }
 
-main section .button_middle{
+main section .button_middle {
   width: 100%;
   text-align: center;
 }
@@ -67,7 +67,7 @@ main section div .link_video {
   position: relative;
 }
 
-main section div a .triangle{
+main section div a .triangle {
   position: absolute;
   top: 2px;
   left: 18px;
@@ -77,82 +77,83 @@ main section div a .triangle{
 main section .main_text_left {
   float: left;
   display: block;
-  width: 49%;  
+  width: 49%;
 }
 
 main section .main_text_right {
   float: right;
   display: block;
-  width: 49%;  
+  width: 49%;
 }
 
 main section .big_pic_right {
- float: right;
+  float: right;
 }
 
 main section .big_pic_left {
   float: left;
- }
+}
 
-main section div h1{
+main section div h1 {
   font-size: 44px;
   margin: 80px 0 30px 0;
 }
 
-.section_break{
+.section_break {
   overflow: hidden
 }
 
-.second_section_break{
+.second_section_break {
   padding: 100px 100px 50px 100px;
 }
 
 
-main section h2{
+main section h2 {
   font-size: 36px;
   text-align: center;
 }
 
-main section div .first_page_paragraph{
+main section div .first_page_paragraph {
   font-size: 18px;
   width: 458px;
   line-height: 28px;
 }
 
-main section div p{
+main section div p {
   font-size: 18px;
 }
 
 
-  main section div article{
-    margin: 0 20px 30px 0;
+main section div article {
+  margin: 0 20px 30px 0;
 }
 
-.columns{
+.columns {
   display: flex;
-  justify-content: space-between; /* to check later */
+  justify-content: space-between;
 }
 
-main section h3{
+main section h3 {
   font-size: 36px;
 }
 
-main section h6{
+main section h6 {
   font-size: 16px;
   margin-bottom: unset;
 }
 
-p{
+p {
   color: rgb(47, 40, 29);
 }
 
 
 
-main section, footer{
+main section,
+footer {
   padding: 100px;
 }
 
-footer nav a{
+footer nav a {
   text-decoration: none;
   color: rgb(25, 59, 86);
 }
@@ -161,12 +162,12 @@ footer div:first-child {
   margin-left: 35%;
 }
 
-footer div button{
+footer div button {
   margin-top: 10px;
 
 }
 
-#email{
+#email {
   border: 2px solid gray;
   padding: 10px 60px 10px 15px;
   border-radius: 10px;

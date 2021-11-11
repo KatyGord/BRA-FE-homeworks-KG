@@ -4,42 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a9ca4f5f9b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./main_styles_bhromaon.css">
     <title>BHROMAON</title>
 </head>
 <body class="body">
     <main class="main">
-        <!--
-        Слабовато...
-        + cod-style - Используй авто-выравние кода:
-            - Трудно читать название классов, нет единого стандарта
-            - вложеность в хтмл - норм.
-            - вложеность в scss - оставляет желать лучшего.
-        + PixelPerfect :
-            - ужас, его нету. Даже приблезительного (+-10px)
-            - скорейвсего ето изза того что ты адаптировала каждую секцию под 100vh.
-                Я вначале тоже думал что все секции ето 100vh, но под конец мы договаривались
-                только первую так сделать, а остальные под макет подганять.
-        + Адаптив :
-            - Частичный - потому что на 900 екранны не канчаются. нормальный адаптив ето до 300px
-        + БЕМ
-            - структуры нету. Для секций с "destination" - нужно было дать один обший класс.
-                В котором ты могла стандартезировать отступы и разментку на все секции. И етоже тебе помогло с адаптивом
-             - структура блоков(вложенность) - есть и правельная
-             - название классов - нужно учитывать что они буду переиспользоватся тобой и твоими колегами.
-                И старатся называть класс одним словом.
-        -->
         <section class="introduction">
-            <!--
-            прекрассное название класса - introduction
-            + PixelPerfect :
-                - блок с названием и поииском слишком высоко задраны
-                - меню нормально
-            + Адаптив :
-                - до ~900 все норм, а потом меню нужно в бургур прятать
-            + БЕМ :
-                - все хорошо
-            -->
             <div class="introduction__top">
                 <div class="introduction__wraper-top">
                     <div class="company introduction__company">
@@ -53,7 +24,7 @@
                         </button>
                     </div>
                     <div class="scroll introduction__scroll">
-                        <a class="scroll__text" href="">Scroll Down <img class="scroll__icon" src="./Images/triangle_scroll-down.svg" alt="icon"></a>
+                        <a href="#first-section" class="scroll__text" href="">Scroll Down <img class="scroll__icon" src="./Images/triangle_scroll-down.svg" alt="icon"></a>
                     </div>
                 </div>
             </div>
@@ -61,48 +32,44 @@
                 <a class="logo-link about-us-navigation__logo-link" href=".">
                     <h2 class="logo logo__about-us-navigation">bhromaon</h2>
                 </a>
+                <input class="check" type="checkbox" id="check">
+                <label class="check-label" for="check">
+                    <span class="nav-icon">
+                    </span>
+                </label>
                 <nav class="menu about-us-navigation__menu">
-                    <a class="menu__link" href=".">who we are</a>
-                    <a class="menu__link" href=".">what we do</a>
-                    <a class="menu__link" href=".">travel with us</a>
-                    <a class="menu__link" href=".">contact us</a>
+                    <a class="menu__link" href="#first-section">who we are</a>
+                    <a class="menu__link" href="#first-section">what we do</a>
+                    <a class="menu__link" href="#first-section">travel with us</a>
+                    <a class="menu__link" href="#contact-details">contact us</a>
                 </nav>
             </div>
         </section>
 
-        <section class="section-why-us">
-            <!--
-            ужасное название класса -  старайся не усложнять название классов
-                    потому что тебе их еще нужно будет переиспользовать.
-            + PixelPerfect :
-                - его нет. Маленькие отступы по (У)
-                - растояние между текстом и картинками
-                - высота линии текста
-            + Адаптив - частичный :
-                - блок/отступы не резиновые - поетому понадобится куда больше медиа-адаптива
-                - Картинки не стоит фиксировать в шахматном порядке, позволь им смещатся по необходимости.
-                - после 1570 - картинки слишком маленькие. Адаптив 1310 - нужно куда раньше делать
-                - текст тяжело читаем
-            + БЕМ :
-                - description - Прекрассное название блока, легдо переиспользов ать.
-                -
-            -->
-            <section class="description section-why-us__description">
-                <div class="description__text ">
-                    <h3 class="description__title">Why Choose us</h3>
-                    <p class="description__texts">
-                        Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee
-                    </p>
-                    <p class="description__texts">
-                        Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.
-                    </p>
-                    <button class="explore-button description__explore-button">Explore places</button>
-                </div>
-                <div class="pictures description__pictures">
+        <section id="first-section" class="about">
+            <section class="description about__description">
+                <div class="description__text">
+                    <div class="wrapper">
+                        <h3 class="description__title">Why Choose Us</h3>
+                        <p class="description__texts">
+                            Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee
+                        </p>
+                    </div>
                     <div class="pictures__wrapper1">
                         <div class="pictures__pic1">
                             <img class="pictures__img" src="./Images/page2_pic1.png" alt="lake">
                         </div>
+                    </div>
+                 </div>   
+
+                 <div class="description__text">
+                    <div class="wrapper">
+                        <p class="description__texts">
+                            Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.
+                        </p>
+                        <button class="explore-button description__explore-button">
+                            Explore places
+                        </button>
                     </div>
                     <div class="pictures__wrapper2">
                         <div class="pictures__pic2">
@@ -112,7 +79,7 @@
                 </div>
             </section>
 
-            <section class="guidance section-why-us__guidance">
+            <section class="guidance about__guidance">
                 <div class="guidance__wrapper">
 
                      <div class="guidance__process">
@@ -139,11 +106,6 @@
         </section>
 
         <section class="destination1">
-            <!--
-            + PixelPerfect : нет
-            + Адаптив : Частичный
-            + БЕМ :  старатся называть класс одним словом.
-            -->
             <div class="destination1__wrapper">
                 <section class="destination-description destination1__destination-description">
                     <p class="destination-description__country">Spain</p>
@@ -154,11 +116,6 @@
             </div>
         </section>
         <section class="destination2">
-            <!--
-            + PixelPerfect : нет
-            + Адаптив : Частичный
-            + БЕМ :  старатся называть класс одним словом.
-            -->
             <div class="destination2__wrapper">
                 <section class="destination-description destination2__destination-description">
                     <p class="destination-description__country">Spain</p>
@@ -172,18 +129,6 @@
         </section>
 
         <section class="reviews">
-            <!--
-            + PixelPerfect :
-                - Удивительно, но последний блок чудом, достаточно хорошо сопала.
-                - А вот изза "example-review__review-text"  высоты текста пострадал и адаптив
-            + Адаптив : Частичный
-                - я думаю ты обратила внимание что блок вместо того чтобы ужиматся только по бокам он еще
-                    уменьшается по высоте, ето изза - картинки. Она задает высоту блоку, а не текст.
-                - зато картинка адаптивна.
-                - Также совсем не красиво "скачет" переход.
-                    Попробуй сначала выжать все из резиновой верстки, а потом используй уже медия-адаптив.
-            + БЕМ :  старатся называть классы одним словом.
-            -->
             <div class="reviews__wrapper">
                 <h3 class="review-title reviews__review-title">What Our  Tourist Say</h3>
                 <div class="example-review reviews__example-review">
@@ -193,7 +138,7 @@
                     <div class="example-review__text">
                         <h4 class="example-review__name">Sam Sumon</h4>
                         <p class="example-review__review-text">
-                            But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system
+                            <i class="fas fa-quote-left"></i> But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system
                         </p>
                     </div>
                 </div>
@@ -201,12 +146,7 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <!--
-        + PixelPerfect : совпадение в 98% !
-        + Адаптив : 100% !
-        + БЕМ : он есть )))
-        -->
+    <footer id="contact-details" class="footer">
         <div class="company-details footer__company-details">
             <a class="company-details__main-link" href=".">
                 <h1 class="company-details__name">Bhromaon</h1>

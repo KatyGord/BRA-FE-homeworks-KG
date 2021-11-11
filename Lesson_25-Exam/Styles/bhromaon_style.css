@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .introduction {
   width: 100%;
   height: 100vh;
@@ -22,14 +21,14 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -42%);
+          transform: translate(-50%, -42%);
 }
 .introduction__search-view {
   margin-top: 50px;
 }
 .introduction__scroll {
-  margin-top: 116px;
+  margin-top: 130px;
   text-align: center;
 }
 
@@ -38,24 +37,26 @@
 }
 .company__name {
   font-size: 48px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   color: #ffffff;
   font-family: "Josefin Sans";
   text-transform: uppercase;
 }
 .company__slogan {
   font-size: 22px;
-  letter-spacing: 6px;
+  letter-spacing: 5.5px;
   color: #ffffff;
   font-family: "Josefin Sans";
+  font-weight: 300;
+  padding-top: 5px;
 }
 
 .search-view {
-  width: 647px;
+  width: 640px;
 }
 .search-view__field {
-  width: 76%;
-  padding: 20px 10px;
+  width: 73%;
+  padding: 22px 10px;
   border: none;
   position: relative;
 }
@@ -95,24 +96,25 @@
   text-align: center;
 }
 .search-view__search-button {
-  width: 22%;
+  width: 24%;
   position: absolute;
 }
 
 .search-button {
-  height: 55px;
+  height: 59px;
   font-size: 14px;
   letter-spacing: 1px;
   color: #ffffff;
   font-family: "Aleo";
   text-align: center;
   text-transform: uppercase;
-  border-width: 0;
+  border: none;
   background-color: #5474FD;
   border: 3px solid white;
 }
 .search-button__logo {
   position: absolute;
+  left: 112px;
 }
 
 .search-button:hover {
@@ -143,7 +145,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 22px 327px;
+  padding: 27px 327px;
 }
 .about-us-navigation__menu {
   width: 50%;
@@ -179,34 +181,38 @@
   margin-left: 15px;
 }
 
-.section-why-us {
+.hamburger--spring {
+  display: none;
+}
+
+.check {
+  display: none;
+}
+
+.about {
   width: 100%;
 }
-.section-why-us__description {
-  height: 70vh;
+.about__description {
+  height: 84vh;
   background-image: url(../Images/Background_2page.png);
   background-size: cover;
   background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-right: 327px;
   padding-left: 327px;
 }
-.section-why-us__guidance {
-  height: 30vh;
+.about__guidance {
+  height: 41vh;
   background-color: #333333;
 }
 
 .description__text {
-  width: 50%;
   padding-right: 20px;
-  margin-top: 17%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .description__title {
+  padding-top: 31%;
   margin-bottom: 55px;
   font-size: 36px;
   color: #ffffff;
@@ -217,40 +223,9 @@
   letter-spacing: 2px;
   color: #e8e8e8;
   font-family: "Josefin Sans";
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   font-weight: 300;
-}
-.description__pictures {
-  margin-top: 10%;
-}
-
-.pictures {
-  width: 50%;
-}
-.pictures__wrapper1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-}
-.pictures__pic1 {
-  width: 60%;
-}
-.pictures__wrapper2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
-.pictures__pic2 {
-  width: 60%;
-}
-.pictures__img {
-  width: 100%;
+  line-height: 1.5;
 }
 
 .explore-button {
@@ -271,16 +246,26 @@
   background-color: #a77210;
 }
 
+.wrapper {
+  width: 59%;
+}
+
+.pictures__pic1 .pictures__img {
+  margin-top: 117px;
+  margin-left: -14px;
+}
+
+.pictures__pic2 .pictures__img {
+  margin-top: -62px;
+  margin-left: 104px;
+}
+
 .guidance {
-  height: 30vh;
   background: #333333;
   padding: 0 327px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -292,6 +277,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  padding-top: 35px;
 }
 .guidance__decor-line {
   position: relative;
@@ -304,7 +290,7 @@
 }
 .guidance__decor-line::before {
   content: "";
-  border-top: 1px dashed black;
+  border-top: 1px dashed #cacaca;
   border-radius: 50%;
   width: 460px;
   height: 498px;
@@ -315,8 +301,8 @@
           transform: translate(-50%, 0%);
 }
 .guidance__process {
-  margin-right: -85px;
-  margin-left: -85px;
+  margin-right: -64px;
+  margin-left: -72px;
   -ms-flex-item-align: end;
       align-self: flex-end;
   display: -webkit-box;
@@ -352,7 +338,7 @@
 .destination1 {
   background-image: url(../Images/Background_3page.png);
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -361,19 +347,44 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 15%;
+  padding-top: 13%;
   margin-right: 327px;
   margin-left: 327px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
 }
+.destination1__destination-description {
+  margin-left: 5px;
+}
+
+.destination2 {
+  background-image: url(../Images/Background_4page.png);
+  width: 100%;
+  height: 85vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.destination2__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-top: 13%;
+  margin-right: 327px;
+  margin-left: 327px;
+}
+.destination2__destination-description {
+  margin-right: 14px;
+}
 
 .destination-description {
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 40px 27px;
-  width: 30%;
-  min-width: 541px;
+  padding: 46px 27px;
+  width: 43%;
 }
 .destination-description__country {
   font-size: 20px;
@@ -394,10 +405,12 @@
   color: #e8e8e8;
   font-family: "Josefin Sans";
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
+  line-height: 1.5;
 }
 .destination-description__booking {
-  height: 55px;
+  height: 58px;
+  width: 225px;
   font-size: 16px;
   font-weight: 300;
   letter-spacing: 1px;
@@ -413,29 +426,9 @@
   background-color: #a77210;
 }
 
-.destination2 {
-  background-image: url(../Images/Background_4page.png);
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.destination2__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  padding-top: 15%;
-  margin-right: 327px;
-  margin-left: 327px;
-}
-
 .reviews {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-image: url(../Images/Background_5page.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -445,7 +438,7 @@
   margin-left: 327px;
 }
 .reviews__review-title {
-  padding: 112px 0 90px;
+  padding: 120px 0 94px;
   text-align: center;
 }
 .reviews__example-review {
@@ -464,25 +457,21 @@
   color: #ffffff;
   font-family: "Josefin Sans";
   text-transform: uppercase;
-  padding-bottom: 27px;
+  padding-bottom: 43px;
 }
 .example-review__review-text {
   font-size: 16px;
   color: #e8e8e8;
   font-family: "Josefin Sans";
   font-weight: 300;
-}
-.example-review__review-text::before {
-  content: "“";
-  color: #5474fd;
-  font-weight: bold;
-  font-size: 36px;
+  line-height: 1.6;
 }
 
 .review-title {
   font-size: 36px;
   color: #ffffff;
   font-family: "Aleo";
+  letter-spacing: 1px;
 }
 
 .picture-review {
@@ -496,6 +485,12 @@
      object-fit: cover;
   -o-object-position: 75% 50%;
      object-position: 75% 50%;
+}
+
+.fas {
+  color: #5474FD;
+  top: -13px;
+  position: relative;
 }
 
 .footer {
@@ -552,3 +547,4 @@
 .company-details__links:hover #Dribbble-Light-Preview {
   fill: #5474FD;
 }
+/*# sourceMappingURL=bhromaon_style.css.map */
