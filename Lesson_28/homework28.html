@@ -109,12 +109,62 @@
 
 // 8 Запросить у пользователя длину окружности и периметр квадрата. Определить, может ли такая окружность поместиться в указанный квадрат.
 
+// let circle = prompt('Введи длину окружности');
+// let square = prompt('Введи периметр квадрата');
+// if(circle/3.14 <= square/4) {
+//     console.log('yes')
+// } else {
+//     console.log('no')
+// }
 
 // 9 Задать пользователю 3 вопроса, в каждом вопросе по 3 варианта ответа. За каждый правильный ответ начисляется 2 балла. После вопросов выведите пользователю количество набранных баллов.
 
+// let grade = 0; 
+// let question1 = prompt('Первый вопрос. Выбери вариант ответа 1, 2 или 3');
+// let question2 = prompt('Второй вопрос. Выбери вариант ответа 1, 2 или 3');
+// let question3 = prompt('третий вопрос. Выбери вариант ответа 1, 2 или 3');
+// if(question1 == '1'){
+//     grade=grade+2;
+// };
+// if(question2 == '2'){
+//     grade=grade+2;
+// };
+// if(question3 == '3'){
+//     grade=grade+2;
+// };
+// console.log(`ты набрал ${grade} баллов`);
+
+
 // 10 Запросить дату (день, месяц, год) и вывести следующую за ней дату. Учтите возможность перехода на следующий месяц, год, а также високосный год.
 
-
+// let date = prompt('Введи день');
+// let month = prompt('Введи месяц');
+// let year = prompt('Введи год');
+// date = Number(date);
+// month = Number(month);
+// year = Number(year);
+// if((month == '1' || month == '3' || month == '5' || month == '7' || month == '8' || month == '10') && date == '31' ){
+//     date=1;
+//     month=month+1;
+// } else if((month == '4' || month == '6' || month == '9' || month == '11') && date == '30'){
+//     date=1;
+//     month=month+1;
+// } else if ( (year%400 == 0 || (year%4==0 && year%100 !== 0)) && month == '2' && date == '28'){
+//     date=date+1;
+// } else if(month == '2' && date == '29'){
+//     date=1;
+//     month=month+1;
+// } else if(month == '2' && date == '28'){
+//     date=1;
+//     month=month+1;
+// } else if(date == '31' && month == '12'){
+//     year=year+1;
+//     month=1;
+//     date=1;
+// } else{
+//     date=date+1;
+// };
+// console.log(`${date}.${month}.${year}`);
     </script>
 </body>
 </html>
