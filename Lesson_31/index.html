@@ -8,39 +8,201 @@
 </head>
 <body>
     <script>
-//         1. Создать объект, описывающий автомобиль (производитель, модель, год выпуска, средняя скорость), и следующие функции для работы с этим объектом:
 
-// Функция для вывода на экран информации об автомобиле;
 
-// Функция для подсчета необходимого времени для преодоления переданного расстояния со средней скоростью. Учтите, что через каждые 4 часа дороги водителю необходимо делать перерыв на 1 час.
-
+// 1. 
+// Створи об'єкт, що описує автомобіль (виробник, модель, рік випуску, середня швидкість, обсяг паливного бака, 
+// середня витрата палива на 100 км., водії), і наступні функції для роботи з цим об'єктом:
+// - Висновок на екран з інформацією про автомобіль.
+// - Додавання водія, який має право керувати автомобілем.
+// - Заправка автомобіля.
+// - Підрахунок необхідного часу для подолання переданої відстані з середньою швидкістю. 
+// Враховуй, що через кожні 4 години дороги водієві необхідно робити перерву на 1 годину, 
+// а також потрібно перевіряти чи має право водій керувати даним автомобілем (ім'я водія функція приймає другим аргументом). 
+// Також потрібно перевірити чи вистачить палива, для здійснення цієї поїздки, якщо палива не вистачить потрібно вивести повідомлення, 
+// про це і запропонувати заправити автомобіль.
  
+// let avto = {
+//     manufacturer: 'Germany',
+//     model: 'Opel',
+//     year: '2020',
+//     averageSpeed: 100, 
+//     fuelInTank: 60,
+//     avarageConsuption: 7, 
+//     drivers: {
+//         driver1: 'Ivan',
+//         driver2: 'John'
+//     }
+// }
+// 1.1 - Висновок на екран з інформацією про автомобіль.
+// function displayInfo(car) {
+//     let info = '' + car.manufacturer + '\n' + car.model + '\n' + car.year + '\n' + car.averageSpeed + '\n' + car.fuelTankVolume + '\n' + car.avarageConsuption;
+//     return info;
+// }
 
-// 2. Создать объект, хранящий в себе отдельно числитель и знаменатель дроби, и следующие функции для работы с этим объектом: 
+// console.log(displayInfo(avto));
 
-// Функция сложения 2-х объектов-дробей;
 
-// Функция вычитания 2-х объектов-дробей;
+// 1.2 - Додавання водія, який має право керувати автомобілем.
+// function driversNew (car, driver) {
+//     car.drivers.driver3 = driver;
+// }
+// driversNew(avto, 'Vika');
+// console.log(avto.drivers.driver3);
 
-// Функция умножения 2-х объектов-дробей;
 
-// Функция деления 2-х объектов-дробей;
+// 1.3 - Заправка автомобіля.
+// function Refueling (car, fuel) {
+//     car.fuelInTank = car.fuelInTank + fuel;
+// }
 
-// Функция сокращения объекта-дроби.
+// console.log(Refueling(avto, 50));
+// console.log(avto.fuelInTank);
 
- 
 
-// 3. Создать объект, описывающий время (часы, минуты, секунды), и следующие функции для работы с этим объектом: 
+// 1.4 Підрахунок необхідного часу для подолання переданої відстані з середньою швидкістю.
 
-// Функция вывода времени на экран;
+// function timeForTravel (car, distance, name) {
+// // if (name == car.drivers) {
+// //     return `Driver ${name} can ride`;
+// // }
 
-// Функция изменения времени на переданное количество секунд;
+//   let time = distance/car.averageSpeed;
+//   let totalTimeTemp;
+//   if (time<4){
+//     totalTimeTemp = time;
+//   } else {
+//     let t = (time - time%4)/4;
+//     totalTimeTemp = t + time;
+//  }
 
-// Функция изменения времени на переданное количество минут;
+//   let totalTimeHours = Math.floor(totalTimeTemp);
+//   let totalTimeMinutes = Math.round((totalTimeTemp - totalTimeHours)*60);
 
-// Функция изменения времени на переданное количество часов. 
+//   if (totalTimeMinutes != 0) {
+//     return 'It will take ' + totalTimeHours + ' hours, ' + totalTimeMinutes + ' minutes.';
+//   } else {
+//     return 'It will take ' + totalTimeHours + ' hours.';
+//   }
+  
 
-// Учтите, что в последних 3-х функциях, при изменении одной части времени, может измениться и другая. Например, если ко времени «20:30:45» добавить 30 секунд, то должно получиться «20:31:15», а не «20:30:75».
+// }
+
+// console.log(timeForTravel(avto, 400, 'Ivan'));
+
+// function time (seconds) {
+//   let hourFromSeconds = Math.floor(seconds/3600);
+//   let minuteFromSeconds = Math.floor((seconds%3600)/60);
+//   let secondFromSeconds = seconds%60;
+//   let result;
+  
+//   return result=time1(hourFromSeconds, minuteFromSeconds, secondFromSeconds); 
+  
+// }
+
+// console.log(time (7665));
+
+// function time1(hour, minutes, seconds) {
+//   if (String(hour).length === 1){
+//    hour = '0'+hour;
+//   } else {
+//     hour = String(hour);
+//   }
+//   if (String(minutes).length === 1){
+//    minutes = '0'+minutes;
+//   } else if (minutes === undefined){
+//     minutes='00';
+//   } else {
+//     minutes = String(minutes);
+//   }
+//   if (String(seconds).length === 1){
+//    seconds = '0'+seconds;
+//   } else if (seconds === undefined){
+//     seconds='00';
+//   } else {
+//     seconds = String(seconds);
+//   }
+  
+//  return hour + ':' + minutes + ':' + seconds;
+  
+// }
+
+
+// 2. Норма
+
+// Створити об'єкт, що описує час (години, хвилини, секунди), і такі функції для роботи з цим об'єктом:
+// Для виведення часу на екран.
+// Зміни часу на передане кількість секунд.
+// Зміни часу на передане кількість хвилин.
+// Зміни часу на передане кількість годин.
+// Врахуйте, що в останніх 3-х функціях, при зміні однієї частини часу, може змінитися і інша. 
+// Наприклад: якщо до часу «20:59:45» додати 30 секунд, то повинно вийти «21:00:15», а не «20:30:75». 
+// Також потрібно передбачити можливість того що користувач може передати 150 секунд, або 75 хвилин.
+
+
+// let time = {
+//     hours: 6,
+//     minutes: 57, 
+//     seconds: 30,
+// };
+
+// function showTime(timeFunc) {
+//     return timeFunc.hours + ":" + timeFunc.minutes + ":" + timeFunc.seconds; 
+// };
+
+// console.log(showTime(time));
+
+
+// Зміни часу на передане кількість секунд.
+
+// function timePlusSeconds (timeSecs, secondsAmount) {
+//     timeInSeconds = (timeSecs.hours * 3600) + (timeSecs.minutes * 60) + timeSecs.seconds;
+//     newTimeInSeconds = timeInSeconds + secondsAmount;
+//     timeSecs.hours = Math.floor(newTimeInSeconds/3600);
+//     timeSecs.minutes = Math.floor((newTimeInSeconds%3600)/60);
+//     timeSecs.seconds = newTimeInSeconds%60;
+//     return "New time is " + timeSecs.hours + ":" + timeSecs.minutes + ":" + timeSecs.seconds; 
+// }
+
+// console.log(timePlusSeconds(time, 3000));
+
+
+// Зміни часу на передане кількість хвилин.
+
+// function timePlusMinutes (timeMins, minutesAmount) {
+//     timeInMinutes = (timeMins.hours * 60) + timeMins.minutes;
+//     newTimeInMinutes = timeInMinutes + minutesAmount;
+//     timeMins.hours = Math.floor(newTimeInMinutes/60);
+//     timeMins.minutes = newTimeInMinutes%60;
+    
+//     return "New time is " + timeMins.hours + ":" + timeMins.minutes + ":" + timeMins.seconds; 
+// }
+
+// console.log(timePlusMinutes(time, 64));
+
+// Зміни часу на передане кількість годин.
+
+// function timePlusHours (timeHour, hoursAmount) {
+//     timeHour.hours = timeHour.hours + hoursAmount;
+    
+//     return "New time is " + timeHour.hours + ":" + timeHour.minutes + ":" + timeHour.seconds; 
+// }
+
+// console.log(timePlusHours(time, 10));
+
+
+// Максимум
+
+// Створи об'єкт, що описує звичайний дріб. Створи об'єкт, який має методи роботи з дробом:
+// Складання 2-х об'єктів-дробів.
+// Віднімання 2-х об'єктів-дробів.
+// Множення 2-х об'єктів-дробів.
+// Ділення 2-х об'єктів-дробів.
+// Скорочення об'єкта-дробу.
+// (Тобі потрібно буде створити ще деякі методи не зазначені в завданні, для отримання математично правильної відповіді)
+
+
+
 
 
     </script>

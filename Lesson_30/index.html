@@ -5,24 +5,289 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Functions</title>
 </head>
 <body>
     <script>
 
-// Написать функцию, которая принимает 2 числа и возвращает -1, если первое меньше, чем второе; 1 – если первое больше, чем второе; и 0 – если числа равны.
+// 1. Написать функцию, которая принимает 2 числа и возвращает -1, если первое меньше, чем второе; 
+// 1 – если первое больше, чем второе; и 0 – если числа равны.
+
+function compare(digit1, digit2) {
+    if (digit1 < digit2) {
+        return -1; 
+    } else if (digit1 > digit2) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+let n1 = prompt('Введите число 1');
+let n2 = prompt('Введите число 2');
+
+let result30_1 = compare(n1, n2);
+
+console.log(result30_1);
+
+
+// 2. Написать функцию, которая вычисляет факториал переданного ей числа.
+
+// function factorial(y){
+//     result = y;
+//     for (let i = y - 1; i > 1; i--) {
+//         result *= i;
+//     }
+//     return result;
+// }
+
+// let customNumber = prompt('Insert the number');
+
+// console.log(factorial(customNumber));
 
 
 
-// Написать функцию, которая вычисляет факториал переданного ей числа.
-// Написать функцию, которая принимает три отдельные цифры и превращает их в одно число. Например: цифры 1, 4, 9 превратятся в число 149.
-// Написать функцию, которая принимает длину и ширину прямоугольника и вычисляет его площадь. Если в функцию передали 1 параметр, то она вычисляет площадь квадрата.
-// Написать функцию, которая проверяет, является ли переданное ей число совершенным. Совершенное число – это число, равное сумме всех своих собственных делителей.
-// Написать функцию, которая принимает минимальное и максимальное значения для диапазона, и выводит только те числа из диапазона, которые являются совершенными. Используйте написанную ранее функцию, чтобы узнавать, совершенное число или нет. 
-// Написать функцию, которая принимает время (часы, минуты, секунды) и выводит его на экран в формате «чч:мм:сс».Если при вызове функции минуты и/или секунды не были переданы, то выводить их как 00.
-// Написать функцию, которая принимает часы, минуты и секунды и возвращает это время в секундах.
-// Написать функцию, которая принимает количество секунд, переводит их в часы, минуты и секунды и возвращает в виде строки «чч:мм:сс».
-// Написать функцию, которая считает разницу между датами. Функция принимает 6 параметров, которые описывают 2 даты, и возвращает результат в виде строки «чч:мм:сс». При выполнении задания используйте функции из предыдущих 2-х заданий: сначала обе даты переведите в секунды, узнайте разницу в секундах, а потом разницу переведите обратно в «чч:мм:сс»
+
+// 3. Написать функцию, которая принимает три отдельные цифры и превращает их в одно число. 
+// Например: цифры 1, 4, 9 превратятся в число 149.
+
+// function numbersTogether (d1, d2, d3) {
+//     result = String(d1)+String(d2)+ String(d3);
+//     return result = Number(result);
+// }
+// console.log(numbersTogether(3, 4, 5));
+
+
+
+
+// 4. Написать функцию, которая принимает длину и ширину прямоугольника и вычисляет его площадь. 
+// Если в функцию передали 1 параметр, то она вычисляет площадь квадрата.
+
+// function shapeArea(a, b) {
+//     if (a && b == 0) {
+//         return a*a;
+//     } else if (a == 0 && b == 0) {
+//         return 'Enter numbers';
+//     } else {
+//         return a*b;
+//     }
+// }
+// let width = (Number(prompt('Введи ширину прямоугольника')));
+// let length = (Number(prompt('Введи длину прямоугольника')));
+
+// let result = shapeArea(width, length);
+// console.log(result);
+
+
+// Option 2
+
+// function shapeArea (a, b) {
+//     console.log(Boolean(a));
+//     console.log(Boolean(b));
+
+//     if (a && b == undefined) {
+//         return a * a;
+//     } else if (a == undefined && b == undefined) {
+//         return 'Enter numbers';
+//     } else {
+//         return a * b;
+//     }
+// }
+
+// console.log(shapeArea(3));
+
+
+
+// 5. Написать функцию, которая проверяет, является ли переданное ей число совершенным. 
+// Совершенное число – это число, равное сумме всех своих собственных делителей.
+
+// function perfectNumber(a) {
+//     let b = 0;
+//     for (i = 1; i<a; i++){
+//         if (a % i === 0){
+//             b = b+i;
+//         }
+//     }
+//     if (a == b) {
+//         return `The number ${userNumber} is pefect`;
+//     } else {
+//         return `The number ${userNumber} is not perfect`;
+//     }
+// }
+
+// let userNumber = prompt('Insert the number');
+// console.log(perfectNumber(userNumber));
+
+
+
+// 6. Написать функцию, которая принимает минимальное и максимальное значения для диапазона, 
+// и выводит только те числа из диапазона, которые являются совершенными. 
+// Используйте написанную ранее функцию, чтобы узнавать, совершенное число или нет. 
+
+// let digitMin = prompt('Введите минимальное число диапазона');
+// let digitMax = prompt('Введите максимальное число диапазона');
+
+// function perfectNumber (c) {
+//     let result = 0;
+//     for (let i = 1; i < c; i++){
+//         if (c % i == 0) {
+//             result += i;
+//         }
+//     }
+//     return result === c;
+// }
+
+// function range (a, b) {
+//     for (let i = a; i <=b; i++) {
+//         if (perfectNumber(i)) {
+//             console.log(i)
+//         }
+//     }
+// }
+
+// range(digitMin, digitMax);
+
+
+// 7. Написать функцию, которая принимает время (часы, минуты, секунды) 
+// и выводит его на экран в формате «чч:мм:сс».
+// Если при вызове функции минуты и/или секунды не были переданы, то выводить их как 00.
+
+// let hour = Number(prompt('Insert hours')); 
+// let minutes = Number(prompt('Insert minutes')); 
+// let seconds = Number(prompt('Insert seconds')); 
+
+// function time(hour, minutes, seconds) {
+//   if (String(hour).length === 1){
+//    hour = '0'+hour;
+//   } else {
+//     hour = String(hour);
+//   }
+//   if (String(minutes).length === 1){
+//    minutes = '0'+minutes;
+//   } else if (minutes === undefined){
+//     minutes='00';
+//   } else {
+//     minutes = String(minutes);
+//   }
+//   if (String(seconds).length === 1){
+//    seconds = '0'+seconds;
+//   } else if (seconds === undefined){
+//     seconds='00';
+//   } else {
+//     seconds = String(seconds);
+//   }
+  
+//  return hour + ':' + minutes + ':' + seconds;
+  
+// }
+
+// console.log(time(hour, minutes, seconds));
+
+
+// 8. Написать функцию, которая принимает часы, минуты и секунды и возвращает это время в секундах.
+
+// function seconds (hours, minutes, seconds) {
+//   let sumOfSeconds = (hours * 3600) + (minutes * 60) + seconds;
+//   return sumOfSeconds;
+// }
+
+// console.log(seconds(1, 1, 5));
+
+
+// 9. Написать функцию, которая принимает количество секунд, переводит их в часы, минуты и секунды 
+// и возвращает в виде строки «чч:мм:сс».
+
+// function time (seconds) {
+//   let hourFromSeconds = Math.floor(seconds/3600);
+//   let minuteFromSeconds = Math.floor((seconds%3600)/60);
+//   let secondFromSeconds = seconds%60;
+//   let result;
+  
+//   return result=time1(hourFromSeconds, minuteFromSeconds, secondFromSeconds); 
+  
+// }
+
+// console.log(time (7665));
+
+// function time1(hour, minutes, seconds) {
+//   if (String(hour).length === 1){
+//    hour = '0'+hour;
+//   } else {
+//     hour = String(hour);
+//   }
+//   if (String(minutes).length === 1){
+//    minutes = '0'+minutes;
+//   } else if (minutes === undefined){
+//     minutes='00';
+//   } else {
+//     minutes = String(minutes);
+//   }
+//   if (String(seconds).length === 1){
+//    seconds = '0'+seconds;
+//   } else if (seconds === undefined){
+//     seconds='00';
+//   } else {
+//     seconds = String(seconds);
+//   }
+  
+//  return hour + ':' + minutes + ':' + seconds;
+// }
+
+
+
+/* 10. Написать функцию, которая считает разницу между датами. 
+Функция принимает 6 параметров, которые описывают 2 даты, и возвращает результат в виде строки «чч:мм:сс». 
+При выполнении задания используйте функции из предыдущих 2-х заданий: сначала обе даты переведите в секунды,
+узнайте разницу в секундах, а потом разницу переведите обратно в «чч:мм:сс» */
+
+// function seconds (hours, minutes, seconds) {
+// SumOfSeconds = (hours * 3600) + (minutes * 60) + seconds;
+//   return SumOfSeconds;
+// }
+// let firstTime = seconds(1, 1, 5);
+// console.log(firstTime);
+// let secondTime = seconds(2, 1, 10);
+// console.log(secondTime);
+// let difference = Math.abs(firstTime-secondTime);
+// console.log(difference);
+
+// function time (seconds) {
+    
+//   let hourFromSeconds = Math.floor(seconds/3600);
+//   let minuteFromSeconds = Math.floor((seconds%3600)/60);
+//   let secondFromSeconds = seconds%60;
+//   let result;
+  
+//   return result=time1(hourFromSeconds, minuteFromSeconds, secondFromSeconds); 
+  
+// }
+
+// console.log(time (difference));
+
+// function time1(hour, minutes, seconds) {
+//   if (String(hour).length === 1){
+//    hour = '0'+hour;
+//   } else {
+//     hour = String(hour);
+//   }
+//   if (String(minutes).length === 1){
+//    minutes = '0'+minutes;
+//   } else if (minutes === undefined){
+//     minutes='00';
+//   } else {
+//     minutes = String(minutes);
+//   }
+//   if (String(seconds).length === 1){
+//    seconds = '0'+seconds;
+//   } else if (seconds === undefined){
+//     seconds='00';
+//   } else {
+//     seconds = String(seconds);
+//   }
+  
+//  return hour + ':' + minutes + ':' + seconds;
+// }
+
     </script>
     
 </body>

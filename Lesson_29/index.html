@@ -4,30 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Loops</title>
 </head>
 <body>
     <script>
+
 // 1 Подсчитать сумму всех чисел в заданном пользователем диапазоне.
 
-        // let digit1 = Number(prompt ('Введите первое число'));
-        // console.log("digit1", digit1);
-        // let digit2 = Number(prompt ('Введите второе число'));
-        // console.log("digit2", digit2);
+        let digit1 = Number(prompt ('Введите первое число'));
+        console.log("digit1", digit1);
+        let digit2 = Number(prompt ('Введите второе число'));
+        console.log("digit2", digit2);
 
-        // if (digit1 > digit2){
-        //     let digit4 = digit1;
-        //     digit1 = digit2;
-        //     digit2 = digit4;
-        // } 
+        if (digit1 > digit2){
+            let digit4 = digit1;
+            digit1 = digit2;
+            digit2 = digit4;
+        } 
 
-        // let digit3 = null;
-        // for (let i = digit1; i <= digit2; i++) {
-        //     console.log(i);
-        //     digit3 = i + digit3;
-        // }
+        let digit3 = null;
+        for (let i = digit1; i <= digit2; i++) {
+            console.log(i);
+            digit3 = i + digit3;
+        }
 
-        // console.log("Sum:", digit3);
+        console.log("Sum:", digit3);
 
 // 2 Запросить 2 числа и найти только наибольший общий делитель.
 
@@ -42,6 +43,7 @@
         
 
 // 3 Запросить у пользователя число и вывести все делители этого числа.
+
 // let digit = Number(prompt ('Введите число'));
 // for (let divider=1; divider <= digit; divider++){
 //     if (digit % divider == 0){
@@ -58,7 +60,26 @@
 
 // console.log(digitsLength);
 
-// 5 Запросить у пользователя 10 чисел и подсчитать, сколько он ввел положительных, отрицательных и нулей. При этом также посчитать, сколько четных и нечетных. Вывести статистику на экран. Учтите, что достаточно одной переменной (не 10) для ввода чисел пользователем.
+
+// KG: updated with option 2 (using loops)
+
+// let userNumber = prompt('Enter a numper, pls');
+// let quantityOfDigits = 0;
+
+// for (let i = 0; i <= userNumber.length; i++) {
+//     if (Number(userNumber[i])){
+//         quantityOfDigits++;
+//     }
+// }
+// console.log(quantityOfDigits);
+
+
+
+// 5 Запросить у пользователя 10 чисел и подсчитать, сколько он ввел положительных, 
+// отрицательных и нулей. При этом также посчитать, сколько четных и нечетных. 
+// Вывести статистику на экран. 
+// Учтите, что достаточно одной переменной (не 10) для ввода чисел пользователем.
+
 // let zeroDigits = 0;
 // let PositiveDigits = 0;
 // let negativeDigits = 0;
@@ -84,9 +105,10 @@
 // console.log('Количество нечетных чисел:', oddDigits,', Количество четных чисел:', evenDigits);
 
 
+// 6 Зациклить калькулятор. Запросить у пользователя 2 числа и знак, решить пример, 
+// вывести результат и спросить, хочет ли он решить еще один пример. 
+// И так до тех пор, пока пользователь не откажется.
 
-
-// 6 Зациклить калькулятор. Запросить у пользователя 2 числа и знак, решить пример, вывести результат и спросить, хочет ли он решить еще один пример. И так до тех пор, пока пользователь не откажется.
 // let option;
 // do {
 //     let digit1 = Number(prompt('Введите первое число'));
@@ -112,21 +134,89 @@
 // } while (option=='да');
 
 
+// 7 Запросить у пользователя число и на сколько цифр его сдвинуть. 
+// Сдвинуть цифры числа и вывести результат 
+// (если число 123456 сдвинуть на 2 цифры, то получится 345612).
 
-// 7 ОТсюда еще не готово 
-// Запросить у пользователя число и на сколько цифр его сдвинуть. Сдвинуть цифры числа и вывести результат (если число 123456 сдвинуть на 2 цифры, то получится 345612).
-// let userNumber = Number(prompt('Введите число'));
-// let shift = prompt('Введите, на сколько цифр его сдвинуть');
-// var transitionNumber = userNumber.toString().split('');
-// var realNumbers = transitionNumber.map(Number);
-// console.log(realNumbers);
+// let userNumber = prompt('Введите число');
+// let shift = Number(prompt('Введите, на сколько цифр его сдвинуть'));
+// for (let i=1; i<=shift; i++){
+//     userNumber = userNumber.substring(1, userNumber.length) + userNumber.substring(0, 1);
+// }
 
-// 8 Зациклить вывод дней недели таким образом: «День недели. Хотите увидеть следующий день?» и так до тех пор, пока пользователь нажимает OK.
+// console.log(userNumber);
 
-// 9 Вывести таблицу умножения для всех чисел от 2 до 9. Каждое число необходимо умножить на числа от 1 до 10.
 
-// 10 Игра «Угадай число». Предложить пользователю загадать число от 0 до 100 и отгадать его следующим способом: каждую итерацию цикла делите диапазон чисел пополам, записываете результат в N и спрашиваете у пользователя «Ваше число > N, < N или == N?». В зависимости от того, что указал пользователь, уменьшаете диапазон. Начальный диапазон от 0 до 100, поделили пополам и получили 50. Если пользователь указал, что его число > 50, то изменили диапазон на от 51 до 100. И так до тех пор, пока пользователь не выберет == N.
+// 8 Зациклить вывод дней недели таким образом: «День недели. Хотите увидеть следующий день?» 
+// и так до тех пор, пока пользователь нажимает OK.
 
+// let dayWeek = prompt ('Put todays day of a week');
+// let a;
+// do {
+//     a = confirm(`${dayWeek}. Do you want to see the next day?`);
+//     if (dayWeek == 'Monday') {
+//         dayWeek = 'Tuesday'
+//     } else if (dayWeek == 'Tuesday') {
+//         dayWeek = 'Wednesday'
+//     } else if (dayWeek == 'Wednesday') {
+//         dayWeek = 'Thursday'
+//     } else if (dayWeek == 'Thursday') {
+//         dayWeek = 'Friday'
+//     } else if (dayWeek == 'Friday') {
+//         dayWeek = 'Saturday'
+//     } else if (dayWeek == 'Saturday') {
+//         dayWeek = 'Sunday'
+//     } else if (dayWeek == 'Sunday') {
+//         dayWeek = 'Monday'
+//     } 
+// } while (a === true);
+
+
+// 9 Вывести таблицу умножения для всех чисел от 2 до 9. 
+// Каждое число необходимо умножить на числа от 1 до 10.
+
+// for (let i=2; i < 10; i ++){
+//     console.log('Multiplication table for ' + i + ' is following:')
+//     for (let a=1; a<=10; a++){
+//         result = i * a;
+//         console.log(a + '*' + i + '=' + result);
+//     }
+// }
+
+
+/* 10 Игра «Угадай число». 
+Предложить пользователю загадать число от 0 до 100 и отгадать его следующим способом: 
+каждую итерацию цикла делите диапазон чисел пополам, записываете результат в N 
+и спрашиваете у пользователя «Ваше число > N, < N или == N?». 
+В зависимости от того, что указал пользователь, уменьшаете диапазон. 
+Начальный диапазон от 0 до 100, поделили пополам и получили 50. 
+Если пользователь указал, что его число > 50, то изменили диапазон на от 51 до 100. 
+И так до тех пор, пока пользователь не выберет == N.
+*/
+
+// let minOptionNumber = 0;
+// let maxOptionNumber = 100;
+// let N = 50;
+// let result;
+
+// alert('Think of number from 0 to 100');
+// do {
+// let answer = prompt(`Is your number ${N}, more than ${N}, or less than ${N}? 
+// Insert This is my number/More/Less` )
+
+// while (answer !== "This is my number"){
+//     if (answer === "More"){
+//         minOptionNumber = N;
+//     } else {
+//         maxOptionNumber = N;
+//     }
+//     N = Math.round((maxOptionNumber+minOptionNumber)/2);
+//     answer = prompt(`Is your number ${N}, more than ${N}, or less than ${N}? 
+//     Insert This is my number/More/Less`)
+// } 
+// result = confirm(`So your number was ${N}. Wanna play another round?`);
+// } while (result === true);
+    
     </script>
 </body>
 </html>
